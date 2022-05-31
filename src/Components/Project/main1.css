@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.txtprojext1 {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.txtprojext1 h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color:  #FFFFFE;
+}
+.txtprojext1 p {
+  font-size: 1.2rem;
+  color:  #FFFFFE;
+}
+
+.git {
+  z-index: 9;
+}
+
+.git img {
+  width: 3rem;
+  border-radius:3.5rem;
+}
+
+.git img:hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.containers-main1 {
+  margin-top: 2rem;
+  background-color: #232946;
+}
+.galery{
+  padding: .5rem 0 !important;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1vmin;
+  grid-auto-flow: dense;
+  background-color: #232946;
+  margin-left: 2rem;
+}
+
+.galery .img-content-header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.galery .img-content-header:first-child {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.galery .img-content-header:nth-child(2n+3) {
+  grid-column-start: span 2;
+}
+.galery .img-content-header:nth-child(4n+5) {
+  grid-row-start: span 2;
+  grid-column-start: span 1;
+}
+.galery .img-content-header:nth-child(6n+7) {
+  grid-row-start: span 1;
+}
+.galery .img-content-header:nth-child(8n+9) {
+  grid-row-start: span 1;
+  grid-column-start: span 1;
+
+}
+.galery .img-content-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

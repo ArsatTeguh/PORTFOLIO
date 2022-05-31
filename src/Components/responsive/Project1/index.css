@@ -1,0 +1,69 @@
+@media (max-width: 500px){
+  .containers-main1 {
+    margin-top: 1rem !important;
+    width: 100vw;
+    height: 80vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto;
+  }
+  .txtprojext1 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin: 0 auto !important;
+  }
+  .txtprojext1 h2 {
+    font-size: 1.8rem;
+    height: 25%;
+  }
+  .txtprojext1 p {
+    font-size: 0.8rem;
+    height: 40vh;
+  }
+  .git {
+    z-index: 9;
+  }
+  .git img {
+    width: 1.8rem;
+  }
+  .galery{
+    padding: .5rem 0 !important;
+    position: relative;
+    width: 70%;
+    height: 25vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vmin;
+    grid-auto-flow: dense;
+    background-color: #232946;
+  }
+
+}
+
+@media (min-width: 768px){
+ 
+}
+
+@media (min-width: 1248px){
+  .txtprojext1 h2 {
+    font-size: 2.5rem;
+  }
+  .txtprojext1 p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
+@media (min-width: 1440px){
+  .txtprojext1 h2 {
+    font-size: 3rem;
+  }
+  .txtprojext1 p {
+    font-size: 1.2rem;
+  }
+}
