@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import "./main1.css";
 import "../responsive/Project1/index.css";
 import { imagesMv } from "./fileimg";
-import git from "../../assets/github.png";
+import git from '../../assets/github.png'
 import { motion, AnimatePresence } from "framer-motion";
 import Modal from "../Modal/modal";
 
@@ -26,16 +26,12 @@ const Main1 = () => {
                   movie list saya memanfaatkan API MOVIEDB yang open source,
                   oleh sebab itu AXIOS juga saya pakai dalam project ini.
                 </p>
-                <motion.div className="git">
-                  <motion.img
-                    onClick={() => setModal(true)}
-                    src={git}
-                    alt=""
-                    whileHover={{ scale: 1.2 }}
-                  />
-                </motion.div>
+                <div className="git">
+                <motion.img onClick={() => setModal(true)}  src={git} alt="" 
+              whileHover={{scale:1.2}}
+              />
               </div>
-
+              </div>
               {modal && <Modal modal={modal} setModal={setModal} />}
             </Col>
             <Col>
