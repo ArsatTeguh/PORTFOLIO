@@ -1,7 +1,8 @@
 @media (max-width: 500px) {
   * {
-    overflow-x: hidden;
-    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   .containers-main2 {
     width: 100vw;
@@ -12,27 +13,23 @@
     margin: 0 auto;
   }
   .txtprojext2 {
-    width: 80%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 0 !important;
     margin: 0 auto !important;
+    padding: 2rem 1rem;
   }
   .txtprojext2 h2 {
-    font-size: 1.8rem;
-    height: 25%;
-   
+    font-size: 1.9rem;
   }
   .txtprojext2 p {
+    padding-top: 1rem;
     font-size: 0.8rem;
-    height: 30vh;
   }
 
   .galery2 {
     position: relative;
-    width: 80%;
     height: 20vh;
     margin: 0 auto;
   }
@@ -44,7 +41,7 @@
   .git {
     width: 100%;
     height: 20%;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
   .git img {
     width: 10%;
@@ -54,21 +51,36 @@
 @media (min-width: 768px) {
 }
 
-@media (min-width: 1248px) {
+@media (min-width: 1199px) {
+  .txtprojext2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin: 0 auto !important;
+  }
+  .containers-main2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   .galery2 {
-    width: 90% !important;
+    width: 100% !important;
     height: 50vh;
     margin: 0 auto;
   }
   .galery2 img {
-    width: 38rem;
-    margin-right: 1rem !important;
+    width: 30rem;
+    margin-right: 0rem !important;
   }
   .txtprojext2 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+ 
   }
   .txtprojext2 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8rem;
   }
 }

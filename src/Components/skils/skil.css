@@ -1,0 +1,146 @@
+.skil {
+  padding: 1rem ;
+  position: relative;
+}
+
+.skil-content {
+  margin-top: .5rem;
+  padding: 1rem .5rem;
+  border-radius: .5rem;
+  background-color: #cdcbcf;
+  box-shadow: 0 8px 32px 0 #52028f8b !important;
+  backdrop-filter: blur( 50px );
+  -webkit-backdrop-filter: blur( 50px );
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+.skils p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  box-shadow:  -5px -5px 9px #ffffffa4,3px 3px 5px rgba(94, 104, 121, .288);
+}
+.icon-skil {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 1rem;
+  box-shadow: inset -5px -5px 9px #ffffffa4, inset 3px 3px 5px rgba(94, 104, 121, .288);
+  padding: .5rem;
+}
+
+.icon-skil span {
+  cursor: pointer;
+  font-size: 3rem;
+  display: flex;
+}
+.icon-skil span {
+  background-color: #cdcbcf;
+  border-radius: 100%;
+  box-shadow: -5px -5px 9px #ffffffa4, 3px 3px 5px rgba(94, 104, 121, .288);
+  padding: .5rem;
+}
+.html {
+  animation: animate infinite 3s ease-in-out;
+}
+.css {
+  animation: animate2 infinite 3s ease-in-out;
+}
+.js {
+  animation: animate3 infinite 3s ease-in-out;
+}
+.react {
+  animation: animate4 infinite 3s ease-in-out;
+}
+.next {
+  animation: animate5 infinite 3s ease-in-out;
+}
+.node {
+  animation: animate6 infinite 3s ease-in-out;
+}
+.github {
+  animation: animate7 infinite 3s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    
+  }
+  50% {
+    color: rgb(191, 93, 2);
+
+  }
+  100% {
+
+  }
+}
+@keyframes animate2 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(2, 24, 191);
+
+  }
+  100% {
+
+  }
+}
+@keyframes animate3 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(203, 172, 0);
+
+  }
+  100% {
+
+  }
+}
+@keyframes animate4 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(2, 93, 191);
+
+  }
+  100% {
+
+  }
+}
+@keyframes animate5 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  
+  }
+  100% {
+
+  }
+}
+@keyframes animate6 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(2, 191, 30);
+   ;
+  }
+  100% {
+
+  }
+}
+@keyframes animate7 {
+  0% {
+    
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  
+  }
+  100% {
+
+  }
+}

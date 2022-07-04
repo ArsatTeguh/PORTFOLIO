@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 .contentProfils {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +25,7 @@
   justify-content: center;
   align-items: center;
   width: 5vw;
-  background-color: #232946;
+  background-color: #53028f;
   flex-direction: column;
   z-index: 9;
   height: 60vh;
@@ -134,7 +133,7 @@ margin-left: -7vw;
   align-items: center;
   width: 100%;
   min-height: 60vh;
-  background: linear-gradient(62deg,#949DC1,#614F96);
+  background: #cdcbcf;
   z-index: 2;
 }
 

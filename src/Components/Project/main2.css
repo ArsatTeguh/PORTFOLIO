@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 .containers-main2{
-  background-color: #232946;
+  background-color: #040404;
   position: relative;
-  border-top: 10px solid #B8C1EC;
+  border-top: 10px solid #393838;
 }
 
 .txtprojext2 {
@@ -20,10 +20,10 @@
 .txtprojext2 h2 { 
   font-weight: 700;
   font-size: 3rem;
-  color:  #FFFFFE;
+  color:  rgb(233, 233, 233);
 }
 .txtprojext2 p {
-  color:  #FFFFFE;
+  color:  rgb(230, 230, 230);
   font-size: 1.2rem;
 }
 

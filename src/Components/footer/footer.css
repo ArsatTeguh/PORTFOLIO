@@ -1,0 +1,45 @@
+.footer {
+  border-top: 1px solid rgb(71, 70, 70);
+  background-color: #040404;
+  padding: 2rem 0;
+}
+.info-footer h3 {
+  color: whitesmoke;
+  font-weight: 600;
+}
+.contact-footer h3 {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .info-footer h3 {
+  font-size: 1rem;
+  }
+  .info-footer p {
+    font-size: .8rem;
+  }
+  .contact-footer h3 {
+    font-size: 1rem;
+  }
+  .info-saya {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+  }
+  .credit p  a{
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1199px) {
+  
+}
+@media (min-width: 1440px) {
+  
+}
+

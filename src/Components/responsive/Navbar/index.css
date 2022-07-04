@@ -1,7 +1,6 @@
 @media (max-width: 500px) {
   .item-nav {
-    height: 30vh !important;
-    width: 100% !important;
+    height: 20vh !important;
   }
   .noActive {
     height: 5vh !important;
@@ -9,11 +8,13 @@
   
   .nama p {
     font-size: 2rem !important;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
   }
   .item-nav ul li {
-    padding: 1rem;
+    padding: .5rem;
     font-size: 1.8rem;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
   .logo-nav-down img {
     width: 3rem !important;
@@ -51,25 +52,25 @@
 @media (min-width: 768px) {
 }
 
-@media (min-width: 1248px) {
+@media (min-width: 1199px) {
   .item-nav {
     height: 25vh !important;
   }
   .noActive {
-    height: 8vh !important;
+    height: 7vh !important;
   }
   
   .nama p {
     font-size: 2.5rem !important;
   }
   .item-nav ul li {
-    font-size: 2.5rem;
-    margin-right: 2rem;
+    font-size: 2rem;
+    margin-right: 1.5rem;
   }
   .logo-nav-down img {
     width: 3.5rem !important;
     border-radius: 2rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 2rem;
   }
   
   .logo-nav-down img:hover {
@@ -86,7 +87,7 @@
     border-radius: 2rem;
     transition: all 1s;
     transform: rotate(0deg);
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
   }
   .logo-nav-up img:hover {
     cursor: pointer;

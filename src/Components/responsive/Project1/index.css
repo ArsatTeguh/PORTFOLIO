@@ -9,8 +9,6 @@
     margin: 0 auto;
   }
   .txtprojext1 {
-    width: 80%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +21,7 @@
   }
   .txtprojext1 p {
     font-size: 0.8rem;
-    height: 40vh;
+    padding: 1rem 0rem;
   }
   .git {
     z-index: 9;
@@ -32,9 +30,9 @@
     width: 1.8rem;
   }
   .galery{
-    padding: .5rem 0 !important;
+    margin-top: 2rem !important;
+    padding: 0rem 0 !important;
     position: relative;
-    width: 70%;
     height: 25vh;
     margin: 0 auto;
     display: grid;
@@ -43,20 +41,35 @@
     grid-auto-flow: dense;
     background-color: #232946;
   }
-
 }
 
 @media (min-width: 768px){
  
 }
 
-@media (min-width: 1248px){
+@media (min-width: 1199px){
+  .containers-main1 {
+    margin-top: 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   .txtprojext1 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem !important;
   }
   .txtprojext1 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8rem;
+  }
+  .galery{
+    padding: .5rem 0 !important;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vmin;
+    grid-auto-flow: dense;
+    background-color: #232946;
   }
 }
 @media (min-width: 1440px){

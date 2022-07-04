@@ -4,58 +4,40 @@
   box-sizing: border-box;
 }
 
-.txtprojext1 {
+.txtprojext3 {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.txtprojext1 h2 {
+.txtprojext3 h2 {
   font-weight: 700;
   font-size: 3rem;
   color:  rgb(233, 233, 233);
 }
-.txtprojext1 p {
+.txtprojext3 p {
   font-size: 1.2rem;
   color:  rgb(230, 230, 230);
 }
 
-.git {
-  z-index: 9;
-}
-
-.git img {
-  width: 3rem;
-  border-radius:3.5rem;
-}
-
-.git img:hover {
-  position: relative;
-  cursor: pointer;
-}
-
-.containers-main1 {
-  margin-top: 2rem;
+.containers-main3 {
   background-color: #040404;
   padding: 1rem;
+  border-top: 10px solid #393838;
 }
 .galery{
   padding: .5rem 0 !important;
   position: relative;
-  width: 100%;
-  height: 50vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 1vmin;
   grid-auto-flow: dense;
   background-color: #040404;
-  margin-left: 2rem;
+
 }
 
 .galery .img-content-header {
-  width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -79,7 +61,5 @@
 
 }
 .galery .img-content-header img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }

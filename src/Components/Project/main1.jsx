@@ -10,9 +10,9 @@ import Modal from "../Modal/modal";
 const Main1 = () => {
   const [modal, setModal] = useState(false);
   return (
-    <AnimatePresence>
+      <AnimatePresence>
       <div className="containers-main1">
-        <Container>
+        <Container >
           <Row lg="2" md="2" xs="1">
             <Col>
               <div className="txtprojext1">
@@ -32,7 +32,7 @@ const Main1 = () => {
               />
               </div>
               </div>
-              {modal && <Modal modal={modal} setModal={setModal} />}
+              {modal && <Modal modal={modal} setModal={setModal} to={'https://arsatteguh.github.io/netflix/'} />}
             </Col>
             <Col>
               <div className="galery justify-content-center">
@@ -49,6 +49,7 @@ const Main1 = () => {
         </Container>
       </div>
     </AnimatePresence>
+   
   );
 };
 

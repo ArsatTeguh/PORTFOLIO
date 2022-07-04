@@ -1,34 +1,42 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { Typewriter } from "react-simple-typewriter";
+import { Row, Col } from "react-bootstrap";
 import "./Home.css";
-import "../responsive/Home/index.css"
+import "../responsive/Home/index.css";
+import profil from "../../assets/profil.png";
+import background from "../../assets/svg.png";
 
 const Home = () => {
   return (
-    <Container>
-      <section className="main">
-        <Row lg="2" md="2" sm="2" xs="1">
+    <div className="home">
+      <div className="container-fluid">
+        <Row>
           <Col>
-            <div className="homeText">
-              <div className="text-home">
-                <h2>Hello,.</h2>
-                <h2>Iam Teguh !!</h2>               
-                <h2 className="text-prof">Web Developer !!</h2>               
-              </div>
+            <div className="profil-home">
+              <img
+                style={{ width: "30em" }}
+                src={background}
+                alt="..."
+                className="img-bc"
+              />
+
+              <img
+                style={{ width: "13rem" }}
+                src={profil}
+                class="rounded-circle img-profil"
+                alt="..."
+              />
             </div>
           </Col>
           <Col>
-            <div className="homeIcon">
-              <div className="icon">
-                <h1 className="textIcon">Just Simple</h1>
-              </div>
+            <div className="homeText">
+              <h2>Hello,.</h2>
+              <h2>Iam Teguh </h2>
+              <h2 className="text-prof">Web Developer </h2>
             </div>
           </Col>
         </Row>
-      </section>
-    </Container>
+      </div>
+    </div>
   );
 };
 

@@ -10,13 +10,12 @@ const containersModal = {
   initial: { y: "-100vh", opacity: 0 },
   animate: { y: "0", opacity: 1, transition: { delay: 0.3 } },
 };
-const Modal = ({ modal, setModal, key }) => {
+const Modal = ({ modal, setModal, to }) => {
   const [go, setGo] = useState(false);
 
   const handle = () => {
     setGo(!go);
     setModal(!modal);
-    console.log(key)
   };
   
   return (
@@ -47,10 +46,10 @@ const Modal = ({ modal, setModal, key }) => {
             </motion.div>
             <div className="content">
               <p>
-                Kamu akan di alihkan ke github saya, <br /> terimakasih sudah
+                Kamu akan di alihkan ke mode demo, <br /> terimakasih sudah
                 singgah
               </p>
-              <NavLink href="https://github.com/ArsatTeguh/MovieDb.git">
+              <NavLink href={to}>
                 <motion.button
                   onAuxClick={handle}
                   className="benar"

@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-
-.main{
-  height: 50vh;
+.home{
+  padding: 1rem;
+  height: 60vh;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #cdcbcf;
 }
 .homeText{
   display: flex;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
  }
-.text-home h2 {
+ .homeText h2 {
   color: white;
   font-size: 5rem;
   line-height: 5.5rem;
@@ -28,36 +26,30 @@
   position: relative;
 }
 
-.text-home .text-prof::after {
+.homeText .text-prof::after {
   content:'Front End';
   position: absolute;
   bottom: 25px;
-  right: 40px;
+  right: 80px;
   z-index: -8 !important;
-  color: rgb(49, 48, 48);
+  color: rgb(218, 24, 24);
   opacity: .5;
   text-shadow: 5px 5px rgb(4, 16, 247);
 }
 
-.textIcon {
-  font-family: 'Monoton', cursive;
-  transform: rotate(-90deg);
-  font-size: 4.5rem;
-  color: rgb(249, 167, 15);
-  text-shadow: 5px 15px rgb(187, 187, 185);
+.profil-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   position: relative;
-  z-index: 1 !important;
-  margin-top: 10rem;
 }
-.textIcon::after {
-  content:'PROject';
+.img-bc {
+  position: relative;
+}
+.img-profil {
   position: absolute;
-  color: rgb(249, 101, 15);
-  opacity: 1;
-  text-shadow: 5px 5px rgb(250, 249, 249);
-  top: -65px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -9 !important;
+  top: 50%;
+    left:  50%;
+    transform: translate(-50%,-50%);
 }

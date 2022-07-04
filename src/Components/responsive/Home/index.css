@@ -1,39 +1,42 @@
 @media (max-width: 500px) {
-  .main {
-    width: 100vw;
-    height: 50vh;
+  .home {
+    height: 80vh;
   }
-  .homeText {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .text-home h2 {
-    font-size: 2rem;
-    line-height: 2rem;
+  .homeText h2 {
+    font-size: 2.6rem;
     font-weight: 700;
-    height: 6vh;
-    width: 100%;
-    margin-left: 2rem;
-    margin-top: 1rem;
+    line-height: 3rem;
   }
-  .homeIcon {
-    display: none;
-  }
-  .text-home .text-prof::after {
+  .homeText{
+    padding-top: 5rem;
+    text-align: center;
+   }
+  .homeText .text-prof::after {
     bottom: 8px;
-    right: 40px;
+    right: 30px;
     height: 100% !important;
+  }
+  .img-bc {
+    width: 22em !important;
+  }
+  .img-profil {
+    width: 11em !important
   }
 }
 
 @media (min-width: 768px) {
 }
 
-@media (min-width: 1248px) {
+@media (min-width: 1199px) {
+  .main {
+    height: 100vh;
+  }
+  .textIcon {
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
   .text-home h2 {
-    font-size: 4.2rem;
+    font-size: 4.1rem;
     margin-left: 2rem;
   }
 }

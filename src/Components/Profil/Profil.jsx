@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import foto from "../../assets/Foto.jpg";
 import "./Profil.css";
 import "../responsive/Profil/index.css";
 import * as FiIcons from "react-icons/fi";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { data } from "./profilData";
 import Pendidikan from "./Page/pendidikan";
 import Pelatihan from "./Page/pelatihan";
@@ -33,7 +33,7 @@ const Profil = () => {
   return (
     <>
       <Container>
-        <div className="contentProfils">
+        <div className="contentProfils mt-lg-3">
           <div className="burger">
             <div className={`contentNavigasi ${page ? "slide" : null}`}>
               <div className="contentProfil">
