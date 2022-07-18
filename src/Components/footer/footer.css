@@ -1,14 +1,14 @@
 .footer {
   border-top: 1px solid rgb(71, 70, 70);
-  background-color: #040404;
+  position: relative;
   padding: 2rem 0;
 }
 .info-footer h3 {
-  color: whitesmoke;
+  color: black;
   font-weight: 600;
 }
 .contact-footer h3 {
-  color: whitesmoke;
+  color: black;
   font-weight: 600;
 }
 

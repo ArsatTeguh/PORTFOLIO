@@ -8,7 +8,9 @@
   z-index: 1;
   margin: 0 1rem ;
 }
-
+.text-glass {
+  color: #eaeaea !important; 
+}
 @media (max-width: 500px) {
   .contentPendidikan p {
     color:  #232946;

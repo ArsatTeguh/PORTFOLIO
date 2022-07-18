@@ -10,6 +10,7 @@ import Pendidikan from "./Page/pendidikan";
 import Pelatihan from "./Page/pelatihan";
 import Experience from "./Page/experience";
 import Person from "./Page/person";
+import { useStore } from "../../feature";
 
 //animate
 const containersAnimate = {
@@ -29,13 +30,13 @@ const containersAnimate = {
 
 const Profil = () => {
   const [page, setPage] = useState(false);
-
+  const [state] = useStore()
   return (
-    <>
+    <div className={`profil-bg ${state.thema && 'mode-dark'}`}>
       <Container>
-        <div className="contentProfils mt-lg-3">
+        <div className={`contentProfils pt-lg-3 `}>
           <div className="burger">
-            <div className={`contentNavigasi ${page ? "slide" : null}`}>
+            <div className={`contentNavigasi ${page ? "slide" : null} ${state.thema ? 'glass' : ''}`}>
               <div className="contentProfil">
                 <span onClick={() => setPage(!page)} className="iconPage">
                   <FiIcons.FiLogIn />
@@ -71,7 +72,7 @@ const Profil = () => {
               </motion.div>
             </div>
           </div>
-          <div className="contentInfo">
+          <div className={`contentInfo ${state.thema ? 'glass ' : ''}`}>
             {page === "Pendidikan" && (
               <motion.div
                 className="pendidikan"
@@ -112,7 +113,9 @@ const Profil = () => {
           </div>
         </div>
       </Container>
-    </>
+      <div className="blur-profil"></div>
+      <div className="blur2-profil"></div>
+    </div>
   );
 };
 

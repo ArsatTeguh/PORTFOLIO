@@ -6,18 +6,20 @@ import './main3.css'
 import Modal from '../Modal/modal';
 import {motion} from 'framer-motion'
 import git from '../../assets/github.png'
+import { useStore } from '../../feature';
 
 const Main3 = () => {
   const [modal, setModal] = useState(false);
+  const [state] = useStore()
   return (
 
-      <div className="containers-main3">
+      <div className={`containers-main3 ${state.thema ? 'mode-dark' : ''}`}>
         <Container >
           <Row lg="2" md="2" xs="1" >
             <Col>
               <div className="txtprojext3">
-                <h2>Dashboard</h2>
-                <p>
+                <h2 className={`  ${state.thema ? 'mode-dark' : ''}`}>Dashboard</h2>
+                <p className={`  ${state.thema ? 'mode-dark' : ''}`}>
                   Web Aplikasi dibuat menggunakan teknologi ReactJs sebagian intraksi sudah di selesaikan,
                   seperti Panigation, Add data dan berpindah pages. Menerapkan state Management React Context dan menggunakan data Api open source dan mengkonsumsikan dengan axios serta component modal megguunakan framer motion.
                 </p>
@@ -36,7 +38,7 @@ const Main3 = () => {
               <div className="galery justify-content-center">
                 {imagesDs.map((data, index) => {
                   return (
-                    <div key={index} className="img-content-header">
+                    <div key={index} className={`img-content-header   ${state.thema ? 'mode-dark' : ''}`}>
                       <img src={data} alt="" />
                     </div>
                   );
@@ -45,6 +47,8 @@ const Main3 = () => {
             </Col>
           </Row>
         </Container>
+        <div className="blur-main3"></div>
+        <div className="blur1-main3"></div>
       </div>
   
   )

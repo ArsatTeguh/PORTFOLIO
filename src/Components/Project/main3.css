@@ -13,17 +13,17 @@
 .txtprojext3 h2 {
   font-weight: 700;
   font-size: 3rem;
-  color:  rgb(233, 233, 233);
+  color:  black
 }
 .txtprojext3 p {
   font-size: 1.2rem;
-  color:  rgb(230, 230, 230);
+  color:  rgb(69, 69, 69);
 }
 
 .containers-main3 {
-  background-color: #040404;
   padding: 1rem;
   border-top: 10px solid #393838;
+  position: relative;
 }
 .galery{
   padding: .5rem 0 !important;
@@ -33,8 +33,7 @@
   grid-template-columns: auto auto auto auto;
   gap: 1vmin;
   grid-auto-flow: dense;
-  background-color: #040404;
-
+  background-color: white;
 }
 
 .galery .img-content-header {
@@ -62,4 +61,29 @@
 }
 .galery .img-content-header img {
   object-fit: cover;
+}
+
+.blur-main3 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+ 
+  background: #f4f96f6c;
+  z-index: -1;
+  bottom: 0%;
+  right: 0%; 
+  filter: blur(70px);
+}
+
+.blur1-main3 {
+  position: absolute;
+  width: 25%;
+  height: 10rem;
+  border-radius: 10%;
+  background: #edd0ff;
+  z-index: -1;
+  bottom: 20%;
+  right: 0%;
+  filter: blur(90px);
 }

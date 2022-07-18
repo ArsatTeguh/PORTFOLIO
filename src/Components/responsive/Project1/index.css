@@ -1,6 +1,6 @@
 @media (max-width: 500px){
   .containers-main1 {
-    margin-top: 1rem !important;
+    padding-top: 1rem;
     width: 100vw;
     height: 80vh;
     display: flex !important;
@@ -49,7 +49,6 @@
 
 @media (min-width: 1199px){
   .containers-main1 {
-    margin-top: 1rem !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;

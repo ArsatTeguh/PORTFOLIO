@@ -16,6 +16,7 @@
   font-size: 1.5rem;
   transition: all .5s;
 }
+
 .iconPage :hover{
   cursor: pointer;
   color: rgb(249, 101, 15);
@@ -38,6 +39,7 @@
   align-items: center;
   margin-bottom: 1.5rem;
   transition: all .5s;
+ 
 }
 .contentProfil span:hover {
   cursor: pointer;
@@ -136,5 +138,31 @@ margin-left: -7vw;
   background: #cdcbcf;
   z-index: 2;
 }
+.blur-profil {
+  position: absolute;
+  width: 50%;
+  height: 30rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -1;
+  bottom: 20%;
+  left: 0%; 
+  filter: blur(90px);
+}
+
+.blur2-profil {
+  position: absolute;
+  width: 25%;
+  height: 10rem;
+  border-radius: 10%;
+  background: #f4f96f6c;
+  z-index: -1;
+  top: 0%;
+  right: 0%;
+  filter: blur(90px);
+}
 
 
+.profil-bg {
+  position: relative;
+}

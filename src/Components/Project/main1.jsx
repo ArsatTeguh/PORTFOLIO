@@ -6,18 +6,20 @@ import { imagesMv } from "./fileimg";
 import git from '../../assets/github.png'
 import { motion, AnimatePresence } from "framer-motion";
 import Modal from "../Modal/modal";
+import { useStore } from "../../feature";
 
 const Main1 = () => {
   const [modal, setModal] = useState(false);
+  const [state] = useStore()
   return (
       <AnimatePresence>
-      <div className="containers-main1">
+      <div className={`containers-main1 ${state.thema ? 'mode-dark' : ''} `}>
         <Container >
           <Row lg="2" md="2" xs="1">
             <Col>
-              <div className="txtprojext1">
-                <h2>Slicing NETFLIX</h2>
-                <p>
+              <div className={`txtprojext1`}>
+                <h2 className={` ${state.thema ? 'mode-dark' : ''}`}>Slicing NETFLIX</h2>
+                <p className={` ${state.thema ? 'mode-dark' : ''}`}>
                   Slicing Website NETFLIX saya lakukan untuk mengasah kemampuan
                   saya dalam merancang UI website. Project ini melibatkan
                   Bootsrap dan @MUI sebagai framework untuk desain rangka
@@ -35,10 +37,10 @@ const Main1 = () => {
               {modal && <Modal modal={modal} setModal={setModal} to={'https://arsatteguh.github.io/netflix/'} />}
             </Col>
             <Col>
-              <div className="galery justify-content-center">
+              <div className={`galery justify-content-center   ${state.thema ? 'mode-dark' : ''}`}>
                 {imagesMv.map((data, index) => {
                   return (
-                    <div key={index} className="img-content-header">
+                    <div key={index} className={`img-content-header`}>
                       <img src={data} alt="" />
                     </div>
                   );
@@ -47,6 +49,8 @@ const Main1 = () => {
             </Col>
           </Row>
         </Container>
+        <div className="blur-main"></div>
+      <div className="blur2-main"></div>
       </div>
     </AnimatePresence>
    
