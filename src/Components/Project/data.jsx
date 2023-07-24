@@ -1,6 +1,6 @@
-import frontend4 from "../../assets/project4.JPG";
-import frontend from "../../assets/project.JPG";
-import frontend2 from "../../assets/project2.JPG";
+import frontend4 from "../../assets/project4.jpg";
+import frontend from "../../assets/project.jpg";
+import frontend2 from "../../assets/project2.jpg";
 
 export const Menu = [
   {

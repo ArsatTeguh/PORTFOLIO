@@ -18,7 +18,7 @@ function App() {
         <div className="relative">
           <Home />
           <Person />
-          {/* <Laptop /> */}
+          <Laptop />
         </div>
         <div className="three relative">
           {/* <div className="absolute -top-[0rem] left-0 w-full  ">
