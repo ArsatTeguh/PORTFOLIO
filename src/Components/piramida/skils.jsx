@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import * as AiIcons from "react-icons/ai";
+import { AiFillGitlab, AiFillGithub } from "react-icons/ai";
 import * as DiIcons from "react-icons/di";
 import * as SiIcons from "react-icons/si";
 import * as BiIcons from "react-icons/bi";
@@ -37,13 +37,13 @@ const Skils = () => {
 
               <div className="tiga">
                 <span className={`gitlab  icon`}>
-                  <AiIcons.AiFillGitlab />
+                  <AiFillGitlab />
                 </span>
                 <span className={`github  icon`}>
                   <BiIcons.BiGitMerge />
                 </span>
                 <span className={`git  icon`}>
-                  <AiIcons.AiFillGithub />
+                  <AiFillGitlab />
                 </span>
               </div>
 

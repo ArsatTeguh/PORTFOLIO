@@ -1,13 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import * as VscIcons from "react-icons/vsc";
-import bgBaru from "../../assets/img-side.png";
 import { AnimateScroll } from "../lib/animationScroll";
 import "../responsive/Home/index.css";
 import "./Home.css";
 import MainHome from "./mainHome";
 import { useStore } from "../../feature";
-import Laptop from "../3d_models";
 
 const Home = () => {
   const [state, addThema] = useStore();
