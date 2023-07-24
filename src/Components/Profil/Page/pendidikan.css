@@ -1,0 +1,36 @@
+.contentPendidikan p {
+  color:  #232946;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.pendidikan {
+  z-index: 1;
+  margin: 0 1rem ;
+}
+.text-glass {
+  color: #eaeaea !important; 
+}
+@media (max-width: 500px) {
+  .contentPendidikan p {
+    color:  #232946;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .pendidikan {
+    z-index: 1;
+    margin: 0 .5rem ;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1248px) {
+
+}
+@media (min-width: 1440px) {
+ 
+}
+

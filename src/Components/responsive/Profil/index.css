@@ -1,0 +1,118 @@
+@media (max-width: 500px){
+ 
+/* ====== content hiden slide */
+.iconPage {
+  font-size: 1.8rem;
+}
+
+.contentNavigasi {
+  width: 15vw;
+  height: 70vh;
+  margin-right: .2rem !important;
+}
+.contentProfil {
+  background-color: transparent;
+  z-index: 10;
+  margin-bottom: 1rem;
+  margin-top: .5rem !important;
+  margin-right: -1rem;
+}
+.contentNavigasi .name {
+  font-size: .5rem;
+}
+
+.contentNavigasi img {
+  width: 2rem;
+  margin-right: 2rem;
+}
+
+.contentNavigasi .namaicon {
+ transform: translateX(-100vw);
+ font-size: 1rem;
+
+}
+/* ====== /content hiden slide */
+
+/* ====== content hiden  */
+.slide{
+  width: 40vw;
+}
+
+
+.slide .contentProfil .iconPage {
+ margin: .5rem 0;
+ margin-right: 2rem;
+}
+
+.slide .name {
+  margin-top: .5rem;
+  font-size: .6rem;
+  margin-right: 2rem;
+}
+
+.slide .namaicon {
+  transform: translateX(0);
+  font-size: .7rem;
+ }
+
+.contentIcon ul li {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 7vw;
+}
+
+.slide .contentIcon ul li span {
+  margin: .3rem;
+}
+
+.slide .contentIcon {
+margin-left: -30vw;
+}
+/* ====== /content hiden  */
+
+.contentInfo {
+ height: 70vh !important;
+  overflow-y: scroll;
+  padding: 1rem 0rem;
+}
+
+}
+
+@media (min-width: 768px){
+ 
+}
+
+@media (min-width: 1199px){
+  .slide{
+    width: 20vw;
+  }
+  .contentNavigasi {
+    height: 75vh;
+    text-align: center;
+  }
+  .contentInfo {
+    min-height: 75vh;
+  
+  }
+  .slide .contentIcon {
+    margin-left: -10vw;
+    }
+    .contentIcon ul li {
+      font-size: 1.2rem !important;
+      margin-right: 1.5rem;
+    }
+}
+
+
+@media (min-width: 1440px){
+  .slide{
+    width: 14vw;
+  }
+  .contentNavigasi {
+    height: 60vh;
+  
+  }
+  .contentInfo {
+    min-height: 60vh;
+  }
+}

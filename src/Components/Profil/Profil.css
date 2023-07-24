@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+}
+.contentProfils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+/* ====== content hiden slide */
+.iconPage {
+  color:  #FFFFFE;
+  font-size: 1.5rem;
+  transition: all .5s;
+}
+
+.iconPage :hover{
+  cursor: pointer;
+  color: rgb(249, 101, 15);
+}
+.contentNavigasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  background-color: #53028f;
+  flex-direction: column;
+  z-index: 9;
+  height: 60vh;
+  margin-right: .5rem;
+  transition: all .5s;
+}
+.contentProfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all .5s;
+ 
+}
+.contentProfil span:hover {
+  cursor: pointer;
+
+}
+.contentNavigasi .name {
+  color:  #FFFFFE;
+  opacity: 0;
+  font-size: .5rem;
+
+}
+
+.contentNavigasi img {
+  width: 4rem;
+  border-radius: .5rem;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.contentNavigasi .namaicon {
+ transform: translateX(-100vw);
+ position: absolute;
+ font-size: 1.2rem;
+ transition: all .5s;
+
+}
+
+/* ====== /content hiden slide */
+
+/* ====== content hiden  */
+.slide{
+  width: 14vw;
+  transition: all .5s;
+}
+.slide .contentProfil img {
+transition: all 1s;
+}
+.slide .contentProfil {
+  transition: all .5s;
+}
+
+.slide .contentProfil .iconPage {
+ margin: 1rem 0;
+ transition: all .5s;
+}
+
+.slide .name {
+  margin-top: .5rem;
+  opacity: 1;
+  font-size: 1rem;
+  transition: all 1s;
+}
+.iconText span:hover {
+  cursor: pointer;
+  color: rgb(249, 101, 15);
+  transition: all .1s !important;
+}
+.slide .namaicon {
+  transform: translateX(0);
+  font-size: 1.2rem;
+  transition: all .5s;
+ }
+
+ .slide img {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.contentIcon ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color:  #FFFFFE;
+  cursor: pointer;
+  transition: all .5s;
+}
+.slide .contentIcon ul li span {
+  margin: .4rem;
+  transition: all .5s;
+}
+
+.slide .contentIcon {
+margin-left: -7vw;
+ 
+}
+/* ====== /content hiden  */
+
+
+.contentInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60vh;
+  background: #cdcbcf;
+  z-index: 2;
+}
+.blur-profil {
+  position: absolute;
+  width: 50%;
+  height: 30rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -1;
+  bottom: 20%;
+  left: 0%; 
+  filter: blur(90px);
+}
+
+.blur2-profil {
+  position: absolute;
+  width: 25%;
+  height: 10rem;
+  border-radius: 10%;
+  background: #f4f96f6c;
+  z-index: -1;
+  top: 0%;
+  right: 0%;
+  filter: blur(90px);
+}
+
+
+.profil-bg {
+  position: relative;
+}

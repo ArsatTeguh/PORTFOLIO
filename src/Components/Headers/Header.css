@@ -1,0 +1,65 @@
+.top {
+  height: 70vh;
+  height: calc(var(--vh, 1vh) * 50);
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+}
+.overlay-top1 {
+  position: absolute;
+  height: 100%;
+  width: 35vw;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.overlay-top2 {
+  position: absolute;
+  height: 100%;
+  width: 34vw;
+  background: black;
+  left: 33.333%;
+}
+.overlay-top3 {
+  position: absolute;
+  height: 100%;
+  width: 36vw;
+  left: 66.666%;
+  background: black;
+}
+
+.botom {
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 8;
+}
+.overlay-bottom1 {
+  position: absolute;
+  height: 60%;
+  width: 36vw;
+  background: black;
+  bottom: 0;
+  right: 66.666%;
+  z-index: 8;
+}
+.overlay-bottom2 {
+  position: absolute;
+  height: 60%;
+  width: 36vw;
+  background: black;
+  bottom: 0;
+  right: 33.333%;
+  z-index: 8;
+}
+.overlay-bottom3 {
+  position: absolute;
+  height: 60%;
+  width: 36vw;
+  background: black;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+}

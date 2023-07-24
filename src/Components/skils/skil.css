@@ -1,0 +1,88 @@
+.skil {
+  padding: 1rem;
+  position: relative;
+}
+
+.skil-content {
+  margin-top: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #cdcbcf;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+.dark-skill {
+  border: 1px solid rgba(38, 38, 38, 0.18) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+.skils p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  box-shadow: -5px -5px 9px #ffffffa4, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dark-teks {
+  box-shadow: -5px -5px 9px #595858a4, 3px 3px 5px rgba(71, 71, 72, 0.288) !important;
+}
+
+.icon-skil {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 1rem;
+  box-shadow: inset -5px -5px 9px #ffffffa4,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  padding: 0.5rem;
+}
+.dark-icon {
+  box-shadow: inset -5px -5px 9px #525151a4,
+    inset 3px 3px 5px rgba(70, 70, 70, 0.288) !important;
+}
+.icon-skil span {
+  cursor: pointer;
+  font-size: 3rem;
+  display: flex;
+}
+.icon-skil span {
+  background-color: #cdcbcf;
+  border-radius: 100%;
+  box-shadow: -5px -5px 9px #ffffffa4, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  padding: 0.5rem;
+}
+.dark-skill {
+  box-shadow: -5px -5px 9px #c0bfbfa4, 3px 3px 5px rgba(192, 198, 218, 0.288) !important;
+}
+.html {
+  color: rgb(191, 93, 2);
+}
+.css {
+  color: rgb(2, 24, 191);
+}
+.js {
+  color: rgb(203, 172, 0);
+}
+.react {
+  color: rgb(2, 93, 191);
+}
+.next {
+  color: rgb(255, 255, 255);
+}
+.node {
+  color: rgb(2, 191, 30);
+}
+.github {
+  color: rgb(255, 255, 255);
+}
+.gitlab {
+  color: rgb(255, 34, 34);
+}
+.git {
+  color: rgb(255, 255, 255);
+}
+.nest {
+  color: rgb(255, 34, 34);
+}

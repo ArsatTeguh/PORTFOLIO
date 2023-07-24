@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&family=Smooch&display=swap');
+.backdrop {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentModal {
+  position: relative;
+  width: 30vw;
+  margin: 0 auto;
+  background: linear-gradient(19deg,#53028f,#614F96);
+  border-radius: 1rem;
+  text-align: center;
+}
+.exit {
+  position: absolute;
+  right: 2rem;
+  top: .5rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.content p {
+ line-height: 2rem;
+ font-size: 1.1rem;
+ font-weight: 500;
+ font-family: 'Roboto', sans-serif;
+ color:#ffffff;
+ margin-bottom: 2rem;
+}
+
+.benar {
+  width: 6rem;
+  padding: .2rem 0 !important;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  font-weight: 500 !important;
+  outline: none;
+  margin-bottom: .5rem;
+  border: none;
+}
+
+@media (max-width: 500px){
+  .contentModal {
+    width: 80vw;
+  }
+  .content {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .content p {
+    line-height: 1.5rem;
+    font-size: .9rem;
+    margin-bottom: .5rem !important;
+   }
+   .benar {
+    width: 5.5rem;
+    padding: .2rem 0 !important;
+    font-size: .9rem;
+    border-radius: .5rem;
+    margin-top: .7rem;
+  }
+  .exit {
+    right: 1.5rem;
+    top: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 768px){
+ 
+}
+
+@media (min-width: 1248px){
+
+}

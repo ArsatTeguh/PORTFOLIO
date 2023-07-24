@@ -1,0 +1,72 @@
+@import url("https://db.onlinewebfonts.com/c/90cb7bb668481e6489432e687533592a?family=Twentieth+Century+Bold");
+
+.piramida {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.piramida .icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.satu {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+}
+.dua {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 4rem;
+}
+.tiga {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 4rem;
+}
+
+.des-skil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.des-skil {
+  text-align: justify;
+  font-family: "Twentieth Century Bold", sans-serif;
+  line-height: 3 !important;
+}
+@media (max-width: 500px) {
+  .piramida .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .satu {
+    font-size: 3rem;
+  }
+  .dua {
+    gap: 2rem;
+    font-size: 3rem;
+  }
+  .tiga {
+    gap: 3rem;
+    font-size: 3rem;
+  }
+  .des-skil {
+    font-size: 2rem !important;
+    line-height: 3 !important;
+    text-align: center;
+  }
+}

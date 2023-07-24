@@ -1,0 +1,104 @@
+@media (max-width: 500px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .containers-main2 {
+    width: 100vw;
+    height: 80vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto;
+  }
+  .txtprojext2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin: 0 auto !important;
+    padding: 2rem 1rem;
+  }
+  .txtprojext2 h2 {
+    font-size: 1.9rem;
+  }
+  .txtprojext2 p {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .galery2 {
+    position: relative;
+    height: 20vh;
+    margin: 0 auto;
+  }
+  .galery2 img {
+    width: 18rem;
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+  .git {
+    width: 100%;
+    height: 20%;
+    margin-top: 1rem;
+  }
+  .git img {
+    width: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1199px) {
+  .txtprojext2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin: 0 auto !important;
+  }
+  .containers-main2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .galery2 {
+    width: 100% !important;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .galery2 img {
+    width: 30rem;
+    margin-right: 0rem !important;
+  }
+  .txtprojext2 h2 {
+    font-size: 2rem;
+ 
+  }
+  .txtprojext2 p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+@media (min-width: 1440px) {
+  .galery2 {
+    width: 90% !important;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .galery2 img {
+    width: 42rem;
+    margin-right: 2rem !important;
+  }
+  .txtprojext2 h2 {
+    font-size: 3rem;
+  }
+  .txtprojext2 p {
+    font-size: 1.2rem;
+  }
+}
+

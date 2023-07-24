@@ -1,0 +1,119 @@
+@import url("https://db.onlinewebfonts.com/c/90cb7bb668481e6489432e687533592a?family=Twentieth+Century+Bold");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.387);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem !important;
+}
+
+.txtprojext1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.txtprojext1 h2 {
+  font-size: 3rem !important;
+  color: rgb(36, 36, 36);
+  line-height: normal;
+  font-family: "Twentieth Century Bold", sans-serif;
+}
+
+.txtprojext1 p {
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgb(95, 95, 95);
+}
+
+.btn-project {
+  margin-top: 2rem !important;
+  background: linear-gradient(90deg, #b673f8 2.34%, #54dcd9 100.78%);
+  width: 50%;
+  height: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 5px 8px 13px rgba(0, 0, 0, 0.264);
+  border: 0;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-project:hover {
+  position: relative;
+  cursor: pointer;
+  color: black;
+}
+
+.container-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.img-content-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.05rem;
+}
+.img-content-header img {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 100% !important;
+  height: 350px !important;
+  object-fit: cover !important;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    height: 26rem;
+  }
+  .img-content-header {
+    margin-left: 0rem;
+    height: 100% !important;
+  }
+  .img-content-header img {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    height: 100% !important;
+    object-fit: cover !important;
+    margin-top: 1.2rem;
+  }
+  .txtprojext1 h2 {
+    font-size: 1.8rem !important;
+    color: rgb(36, 36, 36);
+    line-height: 1;
+  }
+
+  .txtprojext1 p {
+    font-size: 0.7rem;
+  }
+  .btn-project {
+    margin-top: 1rem !important;
+    width: 50%;
+    height: 2.1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.264);
+  }
+  .txtprojext1 {
+    padding-left: 1rem;
+    gap: 0.5rem !important;
+  }
+}

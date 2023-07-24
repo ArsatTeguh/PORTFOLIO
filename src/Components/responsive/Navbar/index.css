@@ -1,0 +1,99 @@
+@media (max-width: 500px) {
+  .item-nav {
+    height: 20vh !important;
+  }
+  .noActive {
+    height: 5vh !important;
+  }
+  
+  .nama p {
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+  }
+  .item-nav ul li {
+    padding: .5rem;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  .logo-nav-down img {
+    width: 3rem !important;
+    border-radius: 2rem;
+    transition: all 1s;
+    transform: rotate(180deg);
+    margin-bottom: 3.3rem;
+  }
+  
+  .logo-nav-down img:hover {
+    cursor: pointer;
+    background-color: rgb(215, 107, 57);
+    transition: all 0.5s;
+  }
+  
+  .logo-nav-up {
+    position: absolute;
+  }
+  .logo-nav-up img {
+    width: 3rem !important;
+    border-radius: 2rem;
+    transition: all 1s;
+    transform: rotate(0deg);
+    margin-bottom: 3.5rem;
+  }
+  .logo-nav-up img:hover {
+    cursor: pointer;
+    background-color: rgb(19, 145, 27);
+    transition: all 0.5s;
+  }
+  
+  
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1199px) {
+  .item-nav {
+    height: 25vh !important;
+  }
+  .noActive {
+    height: 7vh !important;
+  }
+  
+  .nama p {
+    font-size: 2.5rem !important;
+  }
+  .item-nav ul li {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+  .logo-nav-down img {
+    width: 3.5rem !important;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .logo-nav-down img:hover {
+    cursor: pointer;
+    background-color: rgb(215, 107, 57);
+    transition: all 0.5s;
+  }
+  
+  .logo-nav-up {
+    position: absolute;
+  }
+  .logo-nav-up img {
+    width: 3rem !important;
+    border-radius: 2rem;
+    transition: all 1s;
+    transform: rotate(0deg);
+    margin-bottom: 3rem;
+  }
+  .logo-nav-up img:hover {
+    cursor: pointer;
+    background-color: rgb(19, 145, 27);
+    transition: all 0.5s;
+  }
+}
+
+

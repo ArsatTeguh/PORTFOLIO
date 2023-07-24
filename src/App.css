@@ -1,0 +1,19 @@
+.mode-dark {
+  background-color: black !important;
+  color: #eaeaea !important;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.62) !important;
+}
+.text-glass {
+  color: #eaeaea !important;
+}
+
+.three {
+  background-color: rgb(13 17 23);
+  color: white;
+}

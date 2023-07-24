@@ -1,0 +1,49 @@
+@media (max-width: 500px){
+ 
+ .txtprojext3 h2 {
+    font-size: 1.8rem !important;
+  }
+  .txtprojext3 p {
+    font-size: 0.8rem !important;
+    padding: 1rem 0rem !important;
+  }
+ 
+}
+
+@media (min-width: 768px){
+ 
+}
+
+@media (min-width: 1199px){
+  .containers-main1 {
+    margin-top: 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .txtprojext3 h2 {
+    font-size: 2rem !important;
+  }
+  .txtprojext3 p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .galery{
+    padding: .5rem 0 !important;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vmin;
+    grid-auto-flow: dense;
+    background-color: #232946;
+  }
+}
+@media (min-width: 1440px){
+  .txtprojext3 h2 {
+    font-size: 3rem;
+  }
+  .txtprojext3 p {
+    font-size: 1.2rem;
+  }
+}
