@@ -1,36 +1,27 @@
-import React, {
-  useEffect,
-  useRef,
-  useCallback,
-  forwardRef,
-  useImperativeHandle,
-  useState,
-  memo,
-} from "react";
+import React, { memo, useCallback, useEffect, useRef, useState } from "react";
 import {
-  ViewerApp,
   AssetManagerPlugin,
-  GBufferPlugin,
-  ProgressivePlugin,
-  TonemapPlugin,
-  SSRPlugin,
-  SSAOPlugin,
   BloomPlugin,
+  GBufferPlugin,
   GammaCorrectionPlugin,
+  ProgressivePlugin,
+  SSAOPlugin,
+  SSRPlugin,
+  TonemapPlugin,
+  ViewerApp,
   mobileAndTabletCheck,
 } from "webgi";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { effect } from "./effect";
-import { useMediaQuery } from "../lib/useReponsive";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = () => {
   const [isMobile, setIsMobile] = useState(null);
   const reffModels = useRef(null);
-  const { matches } = useMediaQuery("(max-width: 450px)");
+
   const memoizeEffect = useCallback((position, target, onUpdate, isMobile) => {
     if (position && target && onUpdate) {
       effect(position, target, onUpdate, isMobile);
@@ -42,6 +33,8 @@ const Laptop = () => {
     const viewer = new ViewerApp({
       canvas: reffModels.current,
     });
+    const Mobile = mobileAndTabletCheck();
+    setIsMobile(Mobile);
     // Add some plugins
     const manager = await viewer.addPlugin(AssetManagerPlugin);
 
@@ -57,6 +50,29 @@ const Laptop = () => {
     await viewer.addPlugin(SSAOPlugin);
     await viewer.addPlugin(BloomPlugin);
 
+    const importer = manager.importer;
+
+    importer.addEventListener("onProgress", (ev) => {
+      const progressRatio = ev.loaded / ev.total;
+      // console.log(progressRatio)
+      document
+        .querySelector(".progress")
+        ?.setAttribute("style", `transform: scaleX(${progressRatio})`);
+    });
+
+    importer.addEventListener("onLoad", (ev) => {
+      gsap.to(".loader", {
+        x: "100%",
+        duration: 0.8,
+        ease: "power4.inOut",
+        delay: 1,
+        onComplete: () => {
+          document.body.style.overflowY = "auto";
+          lenis.start();
+        },
+      });
+    });
+
     viewer.renderer.refreshPipeline();
 
     await manager.addFromPath("/doll.glb");
@@ -64,7 +80,7 @@ const Laptop = () => {
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
 
-    if (matches) {
+    if (isMobile) {
       position.set(2.06, 2.04, 11.02);
       target.set(-0.08, 0.75, 0.01);
       camera.setCameraOptions({ fov: 30 });
@@ -90,7 +106,7 @@ const Laptop = () => {
 
   useEffect(() => {
     setupViewer();
-  }, []);
+  }, [isMobile]);
 
   return (
     <div id="webgi-canvas-container" className="models">

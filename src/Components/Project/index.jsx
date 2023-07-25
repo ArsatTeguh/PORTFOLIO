@@ -37,9 +37,9 @@ const MainIndex = () => {
     onSwipedLeft: left,
     onSwipedRight: right,
     onTouchStartOrOnMouseDown: ({ event }) => event.preventDefault(),
-    touchEventOptions: { passive: true },
+    touchEventOptions: { passive: matches ? true : false },
     preventScrollOnSwipe: false,
-    trackMouse: false,
+    trackMouse: matches ? false : true,
   });
 
   return (
@@ -56,7 +56,7 @@ const MainIndex = () => {
           </div>
           <div className="laptop:container mx-auto list-slider flex items-center">
             <motion.div className="Apps">
-              <div className="rows w-full bg-white" {...swipeHandlers}>
+              <div className="rows w-full " {...swipeHandlers}>
                 {Menu?.map((item, index) => (
                   <motion.div
                     className={`containerss  cursor-pointer flex items-center justify-center z-10 ${

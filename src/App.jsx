@@ -12,7 +12,11 @@ const Skils = React.lazy(() => import("./Components/piramida/skils"));
 
 function App() {
   return (
-    <div className="">
+    <div className="relative overflow-x-hidden">
+      <div class="loader">
+        <p>Loading... Please wait</p>
+        <div class="progress"></div>
+      </div>
       <DataContext>
         <div className="relative">
           <Home />
