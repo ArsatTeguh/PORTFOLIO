@@ -22,13 +22,24 @@ const MainIndex = () => {
       }
     }
   };
+  const right = () => {
+    if (position !== 0) {
+      positionSet((prev) => prev - 1);
+    }
+  };
+  const left = () => {
+    if (position !== Menu.length - 1) {
+      positionSet((prev) => prev + 1);
+    }
+  };
 
   const swipeHandlers = useSwipeable({
-    onSwiped: handleSwip,
+    onSwipedLeft: left,
+    onSwipedRight: right,
     onTouchStartOrOnMouseDown: ({ event }) => event.preventDefault(),
-    touchEventOptions: { passive: false },
+    touchEventOptions: { passive: true },
     preventScrollOnSwipe: false,
-    trackMouse: true,
+    trackMouse: false,
   });
 
   return (
@@ -45,7 +56,7 @@ const MainIndex = () => {
           </div>
           <div className="laptop:container mx-auto list-slider flex items-center">
             <motion.div className="Apps">
-              <div className="rows w-full " {...swipeHandlers}>
+              <div className="rows w-full bg-white" {...swipeHandlers}>
                 {Menu?.map((item, index) => (
                   <motion.div
                     className={`containerss  cursor-pointer flex items-center justify-center z-10 ${
