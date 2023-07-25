@@ -19,19 +19,21 @@ import {
   GammaCorrectionPlugin,
   mobileAndTabletCheck,
 } from "webgi";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { effect } from "./effect";
+import { useMediaQuery } from "../lib/useReponsive";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = () => {
   const [isMobile, setIsMobile] = useState(null);
   const reffModels = useRef(null);
-
-  const memoizeEffect = useCallback((position, target, onUpdate) => {
+  const { matches } = useMediaQuery("(max-width: 450px)");
+  const memoizeEffect = useCallback((position, target, onUpdate, isMobile) => {
     if (position && target && onUpdate) {
-      effect(position, target, onUpdate);
+      effect(position, target, onUpdate, isMobile);
     }
   }, []);
 
@@ -41,8 +43,6 @@ const Laptop = () => {
       canvas: reffModels.current,
     });
     // Add some plugins
-    const mobile = mobileAndTabletCheck();
-    setIsMobile(mobile);
     const manager = await viewer.addPlugin(AssetManagerPlugin);
 
     const camera = viewer.scene.activeCamera;
@@ -64,7 +64,7 @@ const Laptop = () => {
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
 
-    if (isMobile) {
+    if (matches) {
       position.set(2.06, 2.04, 11.02);
       target.set(-0.08, 0.75, 0.01);
       camera.setCameraOptions({ fov: 30 });
@@ -85,7 +85,7 @@ const Laptop = () => {
       }
     });
 
-    memoizeEffect(position, target, onUpdate);
+    memoizeEffect(position, target, onUpdate, isMobile);
   }, []);
 
   useEffect(() => {

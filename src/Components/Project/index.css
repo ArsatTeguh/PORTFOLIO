@@ -25,3 +25,8 @@
 .navigations {
   position: absolute;
 }
+@media (max-width: 500px) {
+  .Apps {
+    width: 100%;
+  }
+}

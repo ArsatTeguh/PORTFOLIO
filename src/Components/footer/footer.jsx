@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <div className="credit text-center pt-10 text-secondary font-[Poppins] font-[500]">
+        <div className="credit text-center  text-secondary font-[Poppins] font-[500]">
           <p className="text-[.7rem] laptop:text-[1rem]">
             Copyright© <a href="?">@arsatteguh</a> - 2022
           </p>

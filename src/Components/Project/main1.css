@@ -82,8 +82,8 @@
 }
 @media (max-width: 500px) {
   .card {
-    width: 80%;
-    height: 26rem;
+    width: 70%;
+    height: 27.5rem;
   }
   .img-content-header {
     margin-left: 0rem;
@@ -95,10 +95,10 @@
     border-top-left-radius: 0.5rem;
     height: 100% !important;
     object-fit: cover !important;
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
   }
   .txtprojext1 h2 {
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
     color: rgb(36, 36, 36);
     line-height: 1;
   }

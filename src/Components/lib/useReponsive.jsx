@@ -10,14 +10,11 @@ export function useMediaQuery(query) {
       setMatches(event.matches);
     };
 
-    // Inisialisasi nilai awal matches
     setMatches(media.matches);
 
-    // Tambahkan event listener pada perubahan media query
     media.addEventListener("change", updateMatches);
 
     return () => {
-      // Hapus event listener ketika komponen unmount
       media.removeEventListener("change", updateMatches);
     };
   }, [query]);

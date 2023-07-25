@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import Home from "./Components/Home/Home";
 import Person from "./Components/person";
 import Skils from "./Components/piramida/skils";
 import { DataContext } from "./feature";
 import Footer from "./Components/footer/footer";
+import { useMediaQuery } from "./Components/lib/useReponsive";
 const Laptop = React.lazy(() => import("./Components/3d_models"));
 const MainIndex = React.lazy(() => import("./Components/Project"));
 
@@ -16,7 +17,9 @@ function App() {
         <div className="relative">
           <Home />
           <Person />
-          <Laptop />
+          <Suspense fallback="Loading">
+            <Laptop />
+          </Suspense>
         </div>
         <div className="three relative">
           <Skils />

@@ -1,24 +1,36 @@
-import React, { useState } from "react";
-import * as AiIcons from "react-icons/ai";
-import { Menu } from "./data";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { useSwipeable } from "react-swipeable";
+import { useMediaQuery } from "../lib/useReponsive";
+import { Menu } from "./data";
 import "./index.css";
 import Main1 from "./main1";
 import CanvasStars from "./three/canvas";
+
 const MainIndex = () => {
   const [position, positionSet] = useState(1);
+  const { matches } = useMediaQuery("(max-width: 500px)");
 
-  const handleRight = () => {
-    if (position !== Menu.length - 1) {
-      positionSet((prev) => prev + 1);
+  const handleSwip = ({ dir }) => {
+    if (dir === "Right") {
+      if (position !== 0) {
+        positionSet((prev) => prev - 1);
+      }
+    } else if (dir === "Left") {
+      if (position !== Menu.length - 1) {
+        positionSet((prev) => prev + 1);
+      }
     }
   };
 
-  const handleLeft = () => {
-    if (position !== 0) {
-      positionSet((prev) => prev - 1);
-    }
-  };
+  const swipeHandlers = useSwipeable({
+    onSwiped: handleSwip,
+    onTouchStartOrOnMouseDown: ({ event }) => event.preventDefault(),
+    touchEventOptions: { passive: false },
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
+
   return (
     <div className="w-full h-full relative">
       <span className="text-4xl font-[700] laptop:top-[5%]  hp:top-[18%] font-[Poppins] text-transparent gradient-text absolute w-full text-center ">
@@ -31,7 +43,7 @@ const MainIndex = () => {
           </div>
           <div className="laptop:container mx-auto list-slider h-full flex items-center">
             <motion.div className="Apps">
-              <div className="navigations flex justify-between top-[1rem]  w-full h-full items-center ">
+              {/* <div className="navigations flex justify-between top-[1rem]  w-full h-full items-center ">
                 <button
                   className=" flex items-center justify-center w-[2.5rem] z-20 h-[2.5rem] bg-white  rounded-full shadow-xl "
                   onClick={handleLeft}
@@ -49,8 +61,9 @@ const MainIndex = () => {
                     <AiIcons.AiOutlineArrowRight />
                   </span>
                 </button>
-              </div>
-              <div className="rows w-full ">
+              </div> */}
+
+              <div className="rows w-full " {...swipeHandlers}>
                 {Menu?.map((item, index) => (
                   <motion.div
                     className={`containerss  cursor-pointer flex items-center justify-center z-10 ${
@@ -60,7 +73,9 @@ const MainIndex = () => {
                     initial={{ scale: 0 }}
                     animate={{
                       rotate: 0,
-                      left: `${(index - position) * 50 - -5}vw`,
+                      left: matches
+                        ? `${(index - position) * 50 - 0}vw`
+                        : `${(index - position) * 50 - -5}vw`,
 
                       scale: index === position ? 1 : 0.8,
                     }}

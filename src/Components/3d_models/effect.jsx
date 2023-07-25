@@ -1,5 +1,5 @@
 import gsap from "gsap";
-export const effect = (position, target, onUpdate) => {
+export const effect = (position, target, onUpdate, isMobile) => {
   const tl = gsap.timeline();
 
   tl.to(position, {
@@ -10,7 +10,7 @@ export const effect = (position, target, onUpdate) => {
       trigger: ".triger",
       start: "top bottom",
       end: "top top",
-      scrub: 2,
+      scrub: 1,
       immediateRender: false,
     },
     force3D: true,
@@ -24,7 +24,7 @@ export const effect = (position, target, onUpdate) => {
         trigger: ".triger",
         start: "top bottom",
         end: "top top",
-        scrub: 2,
+        scrub: 1,
         immediateRender: false,
       },
       force3D: true,
@@ -35,10 +35,9 @@ export const effect = (position, target, onUpdate) => {
         trigger: ".triger",
         start: "top bottom",
         end: "top top",
-        scrub: 2,
+        scrub: 1,
         immediateRender: false,
       },
-      force3D: true,
     })
     .to(".models", {
       opacity: 0,
@@ -46,7 +45,7 @@ export const effect = (position, target, onUpdate) => {
         trigger: ".end-scroll",
         start: "top bottom",
         end: "top top",
-        scrub: 2,
+        scrub: 1,
         immediateRender: false,
       },
       force3D: true,
@@ -57,9 +56,8 @@ export const effect = (position, target, onUpdate) => {
         trigger: ".end-scroll",
         start: "top bottom",
         end: "top top",
-        scrub: 2,
+        scrub: 1,
         immediateRender: false,
       },
-      force3D: true,
     });
 };
