@@ -19,12 +19,11 @@ import { effect } from "./effect";
 gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = () => {
-  const [isMobile, setIsMobile] = useState(null);
   const reffModels = useRef(null);
 
   const memoizeEffect = useCallback((position, target, onUpdate, isMobile) => {
     if (position && target && onUpdate) {
-      effect(position, target, onUpdate, isMobile);
+      effect(position, target, onUpdate);
     }
   }, []);
 
@@ -33,10 +32,7 @@ const Laptop = () => {
     const viewer = new ViewerApp({
       canvas: reffModels.current,
     });
-    const mobileAndTabletCheck = () =>
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      );
+    const isMobile = mobileAndTabletCheck();
     // Add some plugins
     const manager = await viewer.addPlugin(AssetManagerPlugin);
     const camera = viewer.scene.activeCamera;
@@ -80,7 +76,7 @@ const Laptop = () => {
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
 
-    if (mobileAndTabletCheck) {
+    if (isMobile) {
       position.set(2.06, 2.04, 11.02);
       target.set(-0.08, 0.75, 0.01);
       camera.setCameraOptions({ fov: 30 });
@@ -101,7 +97,7 @@ const Laptop = () => {
       }
     });
 
-    memoizeEffect(position, target, onUpdate, isMobile);
+    memoizeEffect(position, target, onUpdate);
   }, []);
 
   useEffect(() => {

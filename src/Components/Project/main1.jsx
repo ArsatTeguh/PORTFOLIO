@@ -22,7 +22,13 @@ const Main1 = (props) => {
               </Col>
               <Col>
                 <div className="img-content-header">
-                  <img src={icon} alt="project" loading="lazy" />
+                  <img
+                    src={icon}
+                    loading="lazy"
+                    alt="project"
+                    width={500}
+                    height={500}
+                  />
                 </div>
               </Col>
             </Row>
