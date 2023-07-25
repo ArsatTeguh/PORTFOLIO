@@ -27,7 +27,7 @@ const MainIndex = () => {
     onSwiped: handleSwip,
     onTouchStartOrOnMouseDown: ({ event }) => event.preventDefault(),
     touchEventOptions: { passive: false },
-    preventScrollOnSwipe: true,
+    preventScrollOnSwipe: false,
     trackMouse: true,
   });
 
@@ -43,28 +43,8 @@ const MainIndex = () => {
               <CanvasStars jarak={position} />
             </Suspense>
           </div>
-          <div className="laptop:container mx-auto list-slider h-full flex items-center">
+          <div className="laptop:container mx-auto list-slider flex items-center">
             <motion.div className="Apps">
-              {/* <div className="navigations flex justify-between top-[1rem]  w-full h-full items-center ">
-                <button
-                  className=" flex items-center justify-center w-[2.5rem] z-20 h-[2.5rem] bg-white  rounded-full shadow-xl "
-                  onClick={handleLeft}
-                >
-                  <span className="text-xl text-black">
-                    <AiIcons.AiOutlineArrowLeft />
-                  </span>
-                </button>
-
-                <button
-                  className="flex items-center z-20  justify-center w-[2.5rem] h-[2.5rem] bg-white font-semibold rounded-full shadow-xl  "
-                  onClick={handleRight}
-                >
-                  <span className="text-xl text-black">
-                    <AiIcons.AiOutlineArrowRight />
-                  </span>
-                </button>
-              </div> */}
-
               <div className="rows w-full " {...swipeHandlers}>
                 {Menu?.map((item, index) => (
                   <motion.div

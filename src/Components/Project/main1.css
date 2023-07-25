@@ -95,7 +95,6 @@
     border-top-left-radius: 0.5rem;
     height: 100% !important;
     object-fit: cover !important;
-    margin-top: 0.9rem;
   }
   .txtprojext1 h2 {
     font-size: 2rem !important;
@@ -113,7 +112,7 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.264);
   }
   .txtprojext1 {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     gap: 0.5rem !important;
   }
 }
