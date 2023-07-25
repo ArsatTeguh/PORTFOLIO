@@ -33,11 +33,12 @@ const Laptop = () => {
     const viewer = new ViewerApp({
       canvas: reffModels.current,
     });
-    const Mobile = mobileAndTabletCheck();
-    setIsMobile(Mobile);
+    const mobileAndTabletCheck = () =>
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
     // Add some plugins
     const manager = await viewer.addPlugin(AssetManagerPlugin);
-
     const camera = viewer.scene.activeCamera;
     const position = camera.position;
     const target = camera.target;
@@ -51,7 +52,6 @@ const Laptop = () => {
     await viewer.addPlugin(BloomPlugin);
 
     const importer = manager.importer;
-
     importer.addEventListener("onProgress", (ev) => {
       const progressRatio = ev.loaded / ev.total;
       // console.log(progressRatio)
@@ -80,7 +80,7 @@ const Laptop = () => {
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
 
-    if (isMobile) {
+    if (mobileAndTabletCheck) {
       position.set(2.06, 2.04, 11.02);
       target.set(-0.08, 0.75, 0.01);
       camera.setCameraOptions({ fov: 30 });
@@ -106,7 +106,7 @@ const Laptop = () => {
 
   useEffect(() => {
     setupViewer();
-  }, [isMobile]);
+  }, []);
 
   return (
     <div id="webgi-canvas-container" className="models">
