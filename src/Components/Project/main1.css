@@ -25,19 +25,19 @@
   padding-left: 2rem;
 }
 
-.txtprojext1 h2 {
-  font-size: 3rem !important;
-  color: rgb(36, 36, 36);
+.title {
+  font-size: 3rem;
   line-height: normal;
+  width: 80%;
   font-family: "Twentieth Century Bold", sans-serif;
 }
 
-.txtprojext1 p {
+.des {
   width: 100%;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: rgb(95, 95, 95);
+  color: white;
 }
 
 .btn-project {
@@ -81,10 +81,6 @@
   object-fit: cover !important;
 }
 @media (max-width: 500px) {
-  .card {
-    width: 70%;
-    height: 27.5rem;
-  }
   .img-content-header {
     margin-left: 0rem;
     height: 100% !important;
@@ -96,20 +92,22 @@
     height: 100% !important;
     object-fit: cover !important;
   }
-  .txtprojext1 h2 {
+  .title {
     font-size: 2rem !important;
     color: rgb(36, 36, 36);
-    line-height: 1;
+    width: 90%;
   }
 
-  .txtprojext1 p {
+  .des {
     font-size: 0.7rem;
   }
+
   .btn-project {
+    font-size: 0.8rem !important;
     margin-top: 1rem !important;
     width: 50%;
     height: 2.1rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.264);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.264);
   }
   .txtprojext1 {
     padding-left: 0.5rem;
