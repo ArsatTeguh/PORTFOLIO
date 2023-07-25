@@ -15,12 +15,13 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { effect } from "./effect";
+import { useMediaQuery } from "../lib/useReponsive";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = () => {
   const reffModels = useRef(null);
-
+  const { matches } = useMediaQuery("(max-width: 500px)");
   const memoizeEffect = useCallback((position, target, onUpdate, isMobile) => {
     if (position && target && onUpdate) {
       effect(position, target, onUpdate);
@@ -32,7 +33,7 @@ const Laptop = () => {
     const viewer = new ViewerApp({
       canvas: reffModels.current,
     });
-    const isMobile = mobileAndTabletCheck();
+
     // Add some plugins
     const manager = await viewer.addPlugin(AssetManagerPlugin);
     const camera = viewer.scene.activeCamera;
@@ -64,7 +65,6 @@ const Laptop = () => {
         delay: 1,
         onComplete: () => {
           document.body.style.overflowY = "auto";
-          lenis.start();
         },
       });
     });
@@ -75,13 +75,12 @@ const Laptop = () => {
 
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
-
-    if (isMobile) {
+    const isMobile = mobileAndTabletCheck();
+    if (matches) {
       position.set(2.06, 2.04, 11.02);
       target.set(-0.08, 0.75, 0.01);
       camera.setCameraOptions({ fov: 30 });
     }
-
     window.scrollTo(0, 0);
 
     let needUpdate = true;
@@ -98,11 +97,11 @@ const Laptop = () => {
     });
 
     memoizeEffect(position, target, onUpdate);
-  }, []);
+  }, [matches]);
 
   useEffect(() => {
     setupViewer();
-  }, []);
+  }, [matches]);
 
   return (
     <div id="webgi-canvas-container" className="models">
@@ -111,4 +110,4 @@ const Laptop = () => {
   );
 };
 
-export default memo(Laptop);
+export default Laptop;
