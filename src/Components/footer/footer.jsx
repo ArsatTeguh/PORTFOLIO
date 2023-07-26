@@ -12,15 +12,14 @@ const Footer = () => {
         <Row md={2} xs={1} className="g-4">
           <Col>
             <div className={`info-footer flex flex-col gap-3    `}>
-              {" "}
               <h3 className={` text-[2rem] gradient-text font-bold  `}>
                 Information Website
               </h3>
               <p
                 className={`text-secondary text-white font-[Poppins] font-[300]`}
               >
-                Web Aplikasi Portfolio ini menggunakan Teknologi React.Js,
-                Bootstrap, Framer Motion dan react-icons
+                This Portfolio Web Application uses React Js Technology,
+                Bootstrap, Framer Motion, Three js, Tailwind.
               </p>
             </div>
           </Col>

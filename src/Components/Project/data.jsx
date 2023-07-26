@@ -1,15 +1,15 @@
 export const Menu = [
   {
     icon: "",
-    link: "",
+    link: "https://konflix.vercel.app/",
     title: "Redesigning Web Netflix.com",
-    des: "React Js, Bootsrap",
+    des: "React Js, Bootsrap, Css",
   },
   {
     icon: "",
-    link: "",
+    link: "https://movies-chi-ten.vercel.app/",
     title: "Design Movies-DB API ",
-    des: "React Js, Redux, Tailwind",
+    des: "React Js, Redux, Tailwind , Typescript",
   },
   {
     icon: "",
@@ -19,7 +19,7 @@ export const Menu = [
   },
   {
     icon: "",
-    link: "",
+    link: "https://github.com/ArsatTeguh/node-service.git",
     title: "Modern Dashboard Back-end ",
     des: "Nest Js, Typescript",
   },

@@ -14,7 +14,9 @@ function App() {
   return (
     <div className="relative overflow-x-hidden">
       <div class="loader">
-        <p>Loading... Please wait</p>
+        <span className="font-[Poppins] font-[500] text-xl laptop:text-2xl ">
+          Sedang Memuat Content
+        </span>
         <div class="progress"></div>
       </div>
       <DataContext>

@@ -5,7 +5,9 @@ const MainHome = () => {
   return (
     <div className="repo" style={{ paddingTop: "30px" }}>
       <div style={{ paddingBottom: "25px" }}>
-        <ButtonOuline>Let's to Repository</ButtonOuline>
+        <a href="/ATS.pdf" download>
+          <ButtonOuline>Get Curriculum Vitae</ButtonOuline>
+        </a>
       </div>
       <div
         className=""
