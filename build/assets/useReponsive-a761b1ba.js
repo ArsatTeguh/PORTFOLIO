@@ -1,0 +1,1 @@
+import{r as c}from"./react-e09a1a9a.js";function h(t){const[n,a]=c.useState(!1);return c.useEffect(()=>{const e=window.matchMedia(t),s=r=>{a(r.matches)};return a(e.matches),e.addEventListener("change",s),()=>{e.removeEventListener("change",s)}},[t]),{matches:n}}export{h as u};

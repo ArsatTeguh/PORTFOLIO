@@ -8,6 +8,16 @@ export default defineConfig({
     plugins: [
       VitePWA({
         injectRegister: "auto",
+        workbox: {
+          globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+          clientsClaim: true,
+          skipWaiting: true,
+          ExpirationPlugin: true,
+          precacheAndRoute: true,
+          createHandlerBoundToURL: true,
+          registerRout: true,
+          StaleWhileRevalidate: true,
+        },
       }),
     ],
     outDir: "build",
