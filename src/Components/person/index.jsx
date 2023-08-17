@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./person.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { motion, useAnimation } from "framer-motion";
 const Person = () => {
   return (
     <div
@@ -16,14 +17,10 @@ const Person = () => {
       <Container>
         <Row>
           <Col></Col>
-          <Col md={8}>
+          <Col md={7}>
             <div className="person">
-              <div className="img-profil">
-                <img
-                  src="https://media.licdn.com/dms/image/C5603AQF9I3i9cvhJ9Q/profile-displayphoto-shrink_800_800/0/1661528967224?e=1695254400&v=beta&t=2cT6Uxz0SBnA9LoM8LqtC0ELRItnchjKxZgo_tKAuRo"
-                  alt=""
-                  style={{ width: "100%", height: "100%" }}
-                />
+              <div className="image">
+                <img src="/teguh.png" alt="profil" />
               </div>
               <div className="deskripsi">
                 <p>
@@ -34,6 +31,19 @@ const Person = () => {
                   </q>
                 </p>
               </div>
+              <motion.div
+                className="btn-person"
+                animate={{
+                  y: [0, -20], // Menggeser dari -100 ke 0
+                }}
+                transition={{
+                  duration: 2, // Durasi animasi pergeseran
+                  repeat: Infinity, // Mengulang tak terbatas
+                  repeatType: "reverse", // Mengubah arah pergeseran saat mengulang
+                }}
+              >
+                <span>Front-end Developer</span>
+              </motion.div>
             </div>
           </Col>
         </Row>
@@ -41,6 +51,7 @@ const Person = () => {
       <div className="blur-main"></div>
       <div className="blur2-main"></div>
     </div>
+    //0823-8430-3652
   );
 };
 

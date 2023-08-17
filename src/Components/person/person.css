@@ -2,28 +2,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
 }
 
-.img-profil {
-  width: 200px;
-  height: 200px;
+.image {
+  height: 400px !important;
+  width: 450px !important;
 }
 
-.img-profil img {
-  border-radius: 100%;
+.image img {
+  width: 100%;
+  height: 100%;
+  margin: 0 1.5rem !important;
+}
+
+.btn-person {
+  position: absolute;
+  top: 6rem;
+  left: 57%;
+  background: linear-gradient(180deg, #b673f8, #b673f8, #9129fa);
+  border-radius: 1rem;
+  padding: 0.5rem 0rem;
+  width: 13rem;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.514);
+}
+.btn-person span {
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .deskripsi {
-  text-align: center;
-  width: 70%;
+  margin: 0 auto !important;
+  width: 65%;
 }
+
 .deskripsi p {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1rem;
+  text-align: center;
   color: rgb(40, 40, 40);
+
+  margin: 0 auto;
 }
 
 q {
@@ -36,7 +66,29 @@ q {
     width: 150px !important;
     height: 150px;
   }
+  .btn-person {
+    top: 6rem;
+    left: 55%;
+    padding: 0.5rem 0rem;
+    width: 10rem;
+  }
+  .btn-person span {
+    font-size: 14px;
+  }
+
+  .deskripsi p {
+    line-height: 1.6;
+
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .deskripsi {
+    width: 100%;
+    text-align: start !important;
+  }
 }
+
 .blur-main {
   position: absolute;
   width: 50%;

@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import {
   AssetManagerPlugin,
   BloomPlugin,
@@ -9,7 +9,6 @@ import {
   SSRPlugin,
   TonemapPlugin,
   ViewerApp,
-  mobileAndTabletCheck,
 } from "webgi";
 
 import gsap from "gsap";
@@ -55,6 +54,7 @@ const Laptop = () => {
       document
         .querySelector(".progress")
         ?.setAttribute("style", `transform: scaleX(${progressRatio})`);
+      document.body.style.overflowY = "hidden";
     });
 
     importer.addEventListener("onLoad", (ev) => {
@@ -63,8 +63,9 @@ const Laptop = () => {
         duration: 0.8,
         ease: "power4.inOut",
         delay: 1,
+
         onComplete: () => {
-          document.body.style.overflowY = "auto";
+          document.body.style.overflowY = "auto"; // Mengatur overflowY ke "auto" saat animasi selesai
         },
       });
     });
@@ -75,10 +76,9 @@ const Laptop = () => {
 
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
-    const isMobile = mobileAndTabletCheck();
     if (matches) {
-      position.set(2.06, 2.04, 11.02);
-      target.set(-0.08, 0.75, 0.01);
+      position.set(2.68, 0.99, 9.86);
+      target.set(0.14, 0.57, 0.04);
       camera.setCameraOptions({ fov: 30 });
     }
     window.scrollTo(0, 0);
