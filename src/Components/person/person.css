@@ -68,12 +68,12 @@ q {
   }
   .btn-person {
     top: 6rem;
-    left: 55%;
+    left: 57%;
     padding: 0.5rem 0rem;
-    width: 10rem;
+    width: 9rem;
   }
   .btn-person span {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .deskripsi p {

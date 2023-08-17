@@ -77,9 +77,9 @@ const Laptop = () => {
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
     if (matches) {
-      position.set(2.68, 0.99, 9.86);
-      target.set(0.14, 0.57, 0.04);
-      camera.setCameraOptions({ fov: 30 });
+      position.set(2.64, 0.98, 9.87);
+      target.set(0.1, 0.56, 0.51);
+      camera.setCameraOptions({ fov: 29 });
     }
     window.scrollTo(0, 0);
 

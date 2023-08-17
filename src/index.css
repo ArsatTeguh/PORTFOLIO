@@ -93,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 500px) {
   .progress {
     top: 55%;
-    height: 1px;
+    height: 1px !important;
     width: 90%;
   }
 }
