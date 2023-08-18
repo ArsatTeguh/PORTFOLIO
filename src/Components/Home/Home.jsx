@@ -26,13 +26,7 @@ const Home = () => {
                 >
                   WEB-DEVELOPER
                 </h2>
-                <span
-                  style={{
-                    fontWeight: "500",
-                    padding: "10px 0px",
-                    fontSize: "16px",
-                  }}
-                >
+                <span className="sub-home">
                   not only a design issue, but the performance and stability of
                   a website becomes more important.
                 </span>
