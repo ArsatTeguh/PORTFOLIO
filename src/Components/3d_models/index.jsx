@@ -79,7 +79,7 @@ const Laptop = () => {
     if (matches) {
       position.set(2.64, 0.98, 9.87);
       target.set(0.1, 0.56, 0.51);
-      camera.setCameraOptions({ fov: 29 });
+      camera.setCameraOptions({ fov: 35 });
     }
     window.scrollTo(0, 0);
 
