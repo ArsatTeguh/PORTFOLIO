@@ -4,8 +4,11 @@ import * as AiIcons from "react-icons/ai";
 import * as ImIcons from "react-icons/im";
 import * as SiIcons from "react-icons/si";
 import "./footer.css";
+import { useMediaQuery } from "../lib/useReponsive";
 
 const Footer = () => {
+  const { matches } = useMediaQuery("(max-width: 500px)");
+
   return (
     <div className={`footer w-[90%] mx-auto laptop:w-full`}>
       <div className="container footer-content">
@@ -40,6 +43,13 @@ const Footer = () => {
                   <ImIcons.ImLocation2 /> Kota Medan
                 </span>
               </div>
+              {matches && (
+                <div className="btn-pdf">
+                  <a href="/ATS.pdf" download>
+                    <span>Get Curriculum Vitae</span>
+                  </a>
+                </div>
+              )}
             </div>
           </Col>
         </Row>

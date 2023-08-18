@@ -21,7 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Laptop = () => {
   const reffModels = useRef(null);
   const { matches } = useMediaQuery("(max-width: 500px)");
-  const memoizeEffect = useCallback((position, target, onUpdate, isMobile) => {
+  const memoizeEffect = useCallback((position, target, onUpdate) => {
     if (position && target && onUpdate) {
       effect(position, target, onUpdate);
     }
@@ -79,7 +79,7 @@ const Laptop = () => {
     if (matches) {
       position.set(2.64, 0.98, 9.87);
       target.set(0.1, 0.56, 0.51);
-      camera.setCameraOptions({ fov: 35 });
+      camera.setCameraOptions({ fov: 33 });
     }
     window.scrollTo(0, 0);
 
@@ -96,7 +96,7 @@ const Laptop = () => {
       }
     });
 
-    memoizeEffect(position, target, onUpdate);
+    memoizeEffect(position, target, onUpdate, matches);
   }, [matches]);
 
   useEffect(() => {
