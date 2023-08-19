@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
-import "./person.css";
+import { motion } from "framer-motion";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { motion, useAnimation } from "framer-motion";
+import "./person.css";
+
 const Person = () => {
   return (
     <div
-      className="triger"
+      className="triger "
       style={{
         position: "relative",
         height: "100vh",

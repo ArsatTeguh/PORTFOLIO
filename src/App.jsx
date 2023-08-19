@@ -1,7 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { DataContext } from "./feature";
 import "./App.css";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = React.lazy(() => import("./Components/3d_models"));
 const MainIndex = React.lazy(() => import("./Components/Project"));
@@ -27,7 +30,8 @@ function App() {
             <Laptop />
           </Suspense>
         </div>
-        <div className="three relative">
+
+        <div className="three relative ">
           <Skils />
           <MainIndex />
           <Footer />

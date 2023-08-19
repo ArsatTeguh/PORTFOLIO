@@ -10,9 +10,9 @@ import "../skils/skil.css";
 import "./piramida.css";
 const Skils = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center end-scroll ">
+    <div className="w-full h-screen flex justify-center items-center end-scroll  ">
       <Container>
-        <Row className="gy-5 ">
+        <Row className="gy-5  ">
           <span className="py-2 text-center text-2xl laptop:text-3xl font-[Poppins] font-[700] text-white">
             OFTEN I USE
           </span>
