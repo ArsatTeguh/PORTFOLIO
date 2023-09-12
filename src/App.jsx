@@ -25,8 +25,8 @@ function App() {
       <DataContext>
         <div className="relative">
           <Home />
-          <Person />
           <Suspense fallback="Loading">
+            <Person />
             <Laptop />
           </Suspense>
         </div>
