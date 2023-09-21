@@ -20,9 +20,9 @@ const Person = () => {
           <Col></Col>
           <Col md={7}>
             <div className="person">
-              <div className="image">
+              {/* <div className="image">
                 <img src="/teguh.png" alt="profil" />
-              </div>
+              </div> */}
               <div className="deskripsi">
                 <p>
                   <q>
@@ -34,14 +34,14 @@ const Person = () => {
               </div>
               <motion.div
                 className="btn-person"
-                animate={{
-                  y: [0, -20], // Menggeser dari -100 ke 0
-                }}
-                transition={{
-                  duration: 2, // Durasi animasi pergeseran
-                  repeat: Infinity, // Mengulang tak terbatas
-                  repeatType: "reverse", // Mengubah arah pergeseran saat mengulang
-                }}
+                // animate={{
+                //   y: [0, -20], // Menggeser dari -100 ke 0
+                // }}
+                // transition={{
+                //   duration: 2, // Durasi animasi pergeseran
+                //   repeat: Infinity, // Mengulang tak terbatas
+                //   repeatType: "reverse", // Mengubah arah pergeseran saat mengulang
+                // }}
               >
                 <span>Front-end Developer</span>
               </motion.div>
