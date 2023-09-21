@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, memo } from "react";
 import {
   AssetManagerPlugin,
   BloomPlugin,
@@ -110,4 +110,4 @@ const Laptop = () => {
   );
 };
 
-export default Laptop;
+export default memo(Laptop);
