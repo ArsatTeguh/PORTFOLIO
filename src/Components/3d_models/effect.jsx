@@ -13,7 +13,6 @@ export const effect = (position, target, onUpdate) => {
       scrub: 2,
       immediateRender: false,
     },
-    force3D: true,
     onUpdate,
   })
     .to(target, {
@@ -27,7 +26,6 @@ export const effect = (position, target, onUpdate) => {
         scrub: 2,
         immediateRender: false,
       },
-      force3D: true,
     })
     .to(".home", {
       opacity: 0,
@@ -48,7 +46,6 @@ export const effect = (position, target, onUpdate) => {
         scrub: 2,
         immediateRender: false,
       },
-      force3D: true,
     })
     .to(".triger", {
       opacity: 0,
