@@ -9,7 +9,7 @@ const Person = () => {
       className="triger "
       style={{
         position: "relative",
-        height: "100vh",
+        height: "90vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
