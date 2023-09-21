@@ -1,40 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { AnimateScroll } from "../lib/animationScroll";
 import "../responsive/Home/index.css";
 import "./Home.css";
 import MainHome from "./mainHome";
-import { useStore } from "../../feature";
 
 const Home = () => {
-  const [state, addThema] = useStore();
-
   return (
-    <div className={` home ${state.thema ? "mode-dark" : ""}`}>
+    <div className={` home `}>
       <div className="container singgah">
         <Row>
           <Col md={8}>
-            <AnimateScroll>
-              <div className="homeText">
-                <h2 style={{ color: state.thema ? "white" : "black" }}>
-                  RESPONSIVE WEB DESIGN DEVELOPMENT
-                </h2>
+            <div className="homeText">
+              <h2 style={{ color: "white" }}>
+                RESPONSIVE WEB DESIGN DEVELOPMENT
+              </h2>
 
-                <h2
-                  className="text-prof gradient-text"
-                  style={{ color: state.thema ? "white" : "black" }}
-                >
-                  WEB-DEVELOPER
-                </h2>
-                <span className="sub-home">
-                  not only a design issue, but the performance and stability of
-                  a website becomes more important.
-                </span>
-                <main>
-                  <MainHome />
-                </main>
-              </div>
-            </AnimateScroll>
+              <h2
+                className="text-prof gradient-text"
+                style={{ color: "black" }}
+              >
+                WEB-DEVELOPER
+              </h2>
+              <span className="sub-home">
+                not only a design issue, but the performance and stability of a
+                website becomes more important.
+              </span>
+              <main>
+                <MainHome />
+              </main>
+            </div>
           </Col>
           <Col md={4}></Col>
         </Row>
