@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { Suspense } from "react";
+import React from "react";
 
-import "./App.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./App.css";
 
 const Laptop = React.lazy(() => import("./Components/3d_models"));
 const MainIndex = React.lazy(() => import("./Components/Project"));
@@ -23,7 +23,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="relative overflow-hidden">
       <div class="loader">
         <span className="font-[Poppins] font-[500] text-xl laptop:text-2xl ">
           Sedang Memuat Content
@@ -33,10 +33,8 @@ function App() {
 
       <div className="relative">
         <Home />
-        <Suspense fallback="Loading">
-          <Person />
-          <Laptop />
-        </Suspense>
+        <Person />
+        <Laptop />
       </div>
 
       <div className="three relative ">
