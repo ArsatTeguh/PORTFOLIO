@@ -96,7 +96,7 @@ const Laptop = () => {
       }
     });
 
-    memoizeEffect(position, target, onUpdate, matches);
+    memoizeEffect(position, target, onUpdate);
   }, [matches]);
 
   useEffect(() => {

@@ -1,5 +1,5 @@
 import gsap from "gsap";
-export const effect = (position, target, onUpdate, matches) => {
+export const effect = (position, target, onUpdate) => {
   const tl = gsap.timeline();
 
   tl.to(position, {
