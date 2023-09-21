@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, memo } from "react";
+import React, { memo, useCallback, useEffect, useRef } from "react";
 import {
   AssetManagerPlugin,
   BloomPlugin,
@@ -13,13 +13,14 @@ import {
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { effect } from "./effect";
 import { useMediaQuery } from "../lib/useReponsive";
+import { effect } from "./effect";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Laptop = () => {
   const reffModels = useRef(null);
+
   const { matches } = useMediaQuery("(max-width: 500px)");
   const memoizeEffect = useCallback((position, target, onUpdate) => {
     if (position && target && onUpdate) {
@@ -97,11 +98,11 @@ const Laptop = () => {
     });
 
     memoizeEffect(position, target, onUpdate);
-  }, [matches]);
+  }, []);
 
   useEffect(() => {
     setupViewer();
-  }, [matches]);
+  }, []);
 
   return (
     <div id="webgi-canvas-container" className="models">
