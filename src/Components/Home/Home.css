@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url("https://db.onlinewebfonts.com/c/90cb7bb668481e6489432e687533592a?family=Twentieth+Century+Bold");
 
+a {
+  text-decoration: none;
+}
+
 .singgah {
   position: relative !important;
   width: 100% !important;
