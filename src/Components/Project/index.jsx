@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import React, { useState, Suspense } from "react";
+import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { useMediaQuery } from "../lib/useReponsive";
 import { Menu } from "./data";
 import "./index.css";
 import Main1 from "./main1";
-const CanvasStars = React.lazy(() => import("./three/canvas"));
+import CanvasStars from "./three/canvas";
 
 const MainIndex = () => {
   const [position, positionSet] = useState(1);
@@ -43,9 +43,7 @@ const MainIndex = () => {
       <div className="slider h-full w-full Apps">
         <div className="content-slider realative w-full h-full">
           <div className="absolute h-full w-full  ">
-            <Suspense fallback={null}>
-              <CanvasStars jarak={position} />
-            </Suspense>
+            <CanvasStars jarak={position} />
           </div>
           <div className="laptop:container mx-auto list-slider w-full flex items-center">
             <motion.div className="Apps ">
