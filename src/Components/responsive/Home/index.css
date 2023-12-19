@@ -1,6 +1,7 @@
 @media (max-width: 500px) {
-  .home {
-    height: 100vh !important;
+  .singgah {
+    padding-top: 4rem !important;
+    height: 100% !important;
   }
   .homeText h2 {
     font-size: 2.3rem !important;
@@ -9,7 +10,11 @@
   }
 
   .repo {
-    display: none;
+    padding-top: 60px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .homeText {
     text-align: center;
@@ -24,7 +29,7 @@
   .homeText .sub-home {
     font-size: 13px !important;
     font-weight: 500;
-    font-family: "Poppins";
+    font-family: 'Poppins';
   }
   .homeText .text-prof::after {
     bottom: 8px;

@@ -47,7 +47,7 @@
 
 .deskripsi p {
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
@@ -62,6 +62,11 @@ q {
   /* tambahkan properti CSS lainnya sesuai keinginan Anda */
 }
 @media (max-width: 500px) {
+  .triger {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    height: 100% !important;
+  }
   .img-profil {
     width: 150px !important;
     height: 150px;

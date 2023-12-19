@@ -1,0 +1,51 @@
+.title-project {
+  font-family: 'Coiny', cursive !important;
+}
+.paraf-project {
+  font-family: 'Poppins', sans-serif;
+}
+.blurs {
+  position: absolute;
+  width: 50%;
+  height: 10rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -1;
+  bottom: 35%;
+  right: 0%;
+  filter: blur(90px);
+}
+.blur4 {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  border-radius: 100%;
+  background: #72dad8;
+  z-index: -1;
+  top: 0%;
+  left: 20%;
+  filter: blur(90px);
+}
+.blur2 {
+  position: absolute;
+  width: 25%;
+  height: 10rem;
+  border-radius: 10%;
+  background: #f4f96f6c;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+  filter: blur(90px);
+}
+
+.blur3 {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  border-radius: 100%;
+  background: #5ae57a70;
+  z-index: -1;
+  bottom: 30%;
+  left: 0%;
+  filter: blur(90px);
+}

@@ -1,77 +1,61 @@
-import React, { useEffect, useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import { AiFillGitlab, AiFillGithub } from "react-icons/ai";
-import * as DiIcons from "react-icons/di";
-import * as SiIcons from "react-icons/si";
-import * as BiIcons from "react-icons/bi";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
+import { AiFillGitlab, AiFillGithub } from 'react-icons/ai';
+import * as DiIcons from 'react-icons/di';
+import * as SiIcons from 'react-icons/si';
+import * as BiIcons from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
-import "../skils/skil.css";
-import "./piramida.css";
+const list = [
+  {
+    icon: <DiIcons.DiJavascript1 />,
+    title: 'Vanilla Javascript',
+    class: 'js  ',
+  },
+  { icon: <SiIcons.SiNextdotjs />, class: 'next ', title: 'Next Js' },
+  { icon: <DiIcons.DiReact />, class: 'react  ', title: 'React Js' },
+  { icon: <AiFillGitlab />, class: 'gitlab  ', title: 'Gitlab' },
+  // { icon: <BiIcons.BiGitMerge />, class: "github  ", title: "Github" },
+  { icon: <AiFillGitlab />, class: 'git  ', title: 'Gitlab' },
+  { icon: <SiIcons.SiNestjs />, class: 'nest  ', title: 'Nest Js' },
+  { icon: <DiIcons.DiNodejsSmall />, class: 'node  ', title: 'Node Js' },
+  { icon: <SiIcons.SiThreedotjs />, class: 'next ', title: 'Three Js' },
+];
+
+import '../skils/skil.css';
+import { AnimateScroll } from '../lib/animationScroll';
+
 const Skils = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center end-scroll  ">
+    <div className="project  w-full h-full py-[4rem] lg:h-screen flex justify-center items-center relative ">
       <Container>
-        <Row className="gy-5  ">
-          <span className="py-2 text-center text-2xl laptop:text-3xl font-[Poppins] font-[700] text-white">
-            OFTEN I USE
-          </span>
+        <Row className="gap-x-4 px-4 ">
+          <div className="py-2 text-2xl laptop:text-4xl font-[Poppins] font-bold homeText">
+            <h2>OFTEN I USE</h2>
+          </div>
           <Col md={5}>
             <div
-              className={`piramida flex flex-col justify-center items-center  
+              className={`mx-auto grid grid-cols-4  justify-center items-center text-center gap-4
               `}
             >
-              <div className="satu">
-                <span className={`js  icon`}>
-                  <DiIcons.DiJavascript1 />
-                </span>
-              </div>
-              <div className="dua">
-                <span className={`next  icon`}>
-                  <SiIcons.SiNextdotjs />
-                </span>
-                <span className={`react  icon`}>
-                  <DiIcons.DiReact />
-                </span>
-              </div>
-
-              <div className="tiga">
-                <span className={`gitlab  icon`}>
-                  <AiFillGitlab />
-                </span>
-                <span className={`github  icon`}>
-                  <BiIcons.BiGitMerge />
-                </span>
-                <span className={`git  icon`}>
-                  <AiFillGitlab />
-                </span>
-              </div>
-
-              <div className="dua">
-                <span className={`nest  icon`}>
-                  <SiIcons.SiNestjs />
-                </span>
-                <span className={`node  icon`}>
-                  <DiIcons.DiNodejsSmall />
-                </span>
-              </div>
-              <div className="satu">
-                <span className={`next icon`}>
-                  <SiIcons.SiThreedotjs />
-                </span>
-              </div>
+              {list.map((item, index) => (
+                <AnimateScroll key={index} delay={index / 10}>
+                  <span
+                    class={`${item.class} shadow-xl h-[3.5rem] w-[3.5rem]  text-4xl  rounded-full flex items-center justify-center `}
+                  >
+                    {item.icon}
+                  </span>
+                </AnimateScroll>
+              ))}
             </div>
           </Col>
-          <Col>
-            <div className="des-skil text-transparent hp:w-[90%] laptop:w-[70%] mx-auto">
-              <p className="text-5xl hp:text-3xl gradient-text">
-                In my view, skill or knowledge will be mastered by itself as
-                often or not we use it.
-              </p>
-            </div>
-          </Col>
+          <Col className=""></Col>
         </Row>
       </Container>
+      <div className="blurs"></div>
+      <div className="blur2"></div>
+      <div className="blur3"></div>
+      <div className="blur4"></div>
     </div>
   );
 };

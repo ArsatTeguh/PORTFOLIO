@@ -63,26 +63,42 @@
   color: rgb(2, 24, 191);
 }
 .js {
-  color: rgb(203, 172, 0);
+  background: linear-gradient(180deg, #f7d309, #f7d309, #af9501);
+  color: whitesmoke;
 }
 .react {
-  color: rgb(2, 93, 191);
+  background: linear-gradient(180deg, #025dbfb7, #025dbfb7, #024e9e);
+  color: whitesmoke;
 }
 .next {
-  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ffffff, #ffffff, #a8a8a8);
+  color: black;
 }
 .node {
-  color: rgb(2, 191, 30);
+  background: linear-gradient(180deg, #02bf1e, #02bf1e, #017e14);
+  color: whitesmoke;
 }
 .github {
   color: rgb(255, 255, 255);
 }
 .gitlab {
-  color: rgb(255, 34, 34);
+  background: linear-gradient(180deg, #ff2222, #ff2222, #ac1515);
+  color: whitesmoke;
 }
 .git {
-  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ffffff, #ffffff, #a8a8a8);
+  color: black;
 }
 .nest {
-  color: rgb(255, 34, 34);
+  background: linear-gradient(180deg, #ff2222, #ff2222, #ac1515);
+  color: whitesmoke;
+}
+.homeText h2 {
+  font-size: 55px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: "Coiny", cursive !important;
+  opacity: 1;
+  color: #272727 !important;
+  position: relative;
 }

@@ -1,4 +1,4 @@
-@import url("https://db.onlinewebfonts.com/c/90cb7bb668481e6489432e687533592a?family=Twentieth+Century+Bold");
+@import url('https://db.onlinewebfonts.com/c/90cb7bb668481e6489432e687533592a?family=Twentieth+Century+Bold');
 .footer {
   position: relative;
   padding: 2rem 0;
@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-family: 'Poppins', sans-serif !important;
 }
 .footer p {
   color: white;
@@ -18,15 +19,18 @@
 .info-footer h3 {
   color: white;
   font-weight: 700;
-  font-family: "Twentieth Century Bold", sans-serif;
+  font-family: 'Twentieth Century Bold', sans-serif;
 }
 .contact-footer h3 {
   color: white;
   font-weight: 700;
-  font-family: "Twentieth Century Bold", sans-serif;
+  font-family: 'Twentieth Century Bold', sans-serif;
 }
 
 @media (max-width: 500px) {
+  .footer {
+    height: 100% !important;
+  }
   .info-footer h3 {
     font-size: 1.5rem;
   }

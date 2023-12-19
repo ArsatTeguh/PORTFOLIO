@@ -1,6 +1,6 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { useCallback } from "react";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { useCallback } from 'react';
 import {
   AssetManagerPlugin,
   BloomPlugin,
@@ -11,8 +11,8 @@ import {
   SSRPlugin,
   TonemapPlugin,
   ViewerApp,
-} from "webgi";
-import { effect } from "./effect";
+} from 'webgi';
+import { effect } from './effect';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,31 +44,30 @@ export const Setup = ({ matches, reffModels }) => {
     await viewer.addPlugin(BloomPlugin);
 
     const importer = manager.importer;
-    importer.addEventListener("onProgress", (ev) => {
+    importer.addEventListener('onProgress', (ev) => {
       const progressRatio = ev.loaded / ev.total;
-      // console.log(progressRatio)
       document
-        .querySelector(".progress")
-        ?.setAttribute("style", `transform: scaleX(${progressRatio})`);
-      document.body.style.overflowY = "hidden";
+        .querySelector('.progress')
+        ?.setAttribute('style', `transform: scaleX(${progressRatio})`);
+      document.body.style.overflowY = 'hidden';
     });
 
-    importer.addEventListener("onLoad", (ev) => {
-      gsap.to(".loader", {
-        x: "100%",
+    importer.addEventListener('onLoad', (ev) => {
+      gsap.to('.loader', {
+        x: '100%',
         duration: 0.8,
-        ease: "power4.inOut",
+        ease: 'power4.inOut',
         delay: 1,
 
         onComplete: () => {
-          document.body.style.overflowY = "auto"; // Mengatur overflowY ke "auto" saat animasi selesai
+          document.body.style.overflowY = 'auto'; // Mengatur overflowY ke "auto" saat animasi selesai
         },
       });
     });
 
     viewer.renderer.refreshPipeline();
 
-    await manager.addFromPath("/doll.glb");
+    await manager.addFromPath('/doll.glb');
 
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({ controlsEnabled: false });
@@ -85,7 +84,7 @@ export const Setup = ({ matches, reffModels }) => {
       viewer.setDirty();
     };
 
-    viewer.addEventListener("preFrame", () => {
+    viewer.addEventListener('preFrame', () => {
       if (needUpdate) {
         camera.positionTargetUpdated(true);
         needUpdate = false;
@@ -93,7 +92,6 @@ export const Setup = ({ matches, reffModels }) => {
     });
 
     memoizeEffect(position, target, onUpdate);
-    console.log("arsat");
   }, [matches]);
 
   return setupViewer;

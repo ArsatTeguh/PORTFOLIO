@@ -1,18 +1,18 @@
-import { motion } from "framer-motion";
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./person.css";
+import { motion } from 'framer-motion';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './person.css';
 
 const Person = () => {
   return (
     <div
       className="triger "
       style={{
-        position: "relative",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        position: 'relative',
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
       <Container>
@@ -40,10 +40,12 @@ const Person = () => {
                 transition={{
                   duration: 2, // Durasi animasi pergeseran
                   repeat: Infinity, // Mengulang tak terbatas
-                  repeatType: "reverse", // Mengubah arah pergeseran saat mengulang
+                  repeatType: 'reverse', // Mengubah arah pergeseran saat mengulang
                 }}
               >
-                <span>Front-end Developer</span>
+                <span className="font-semibold font-[Poppins]">
+                  Web Developer
+                </span>
               </motion.div>
             </div>
           </Col>
