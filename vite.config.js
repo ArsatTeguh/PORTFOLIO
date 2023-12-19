@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-
+import {ViteImageOptimizer} from 'vite-plugin-image-optimizer'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -36,7 +36,19 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()],
+  plugins: [react(),
+  ViteImageOptimizer({
+    jpg: {
+      quality:50
+    },
+    png: {
+      quality:50
+    },
+    svg: {
+      quality:50
+    },
+  })
+  ],
   server: {
     port: 3000,
   },
