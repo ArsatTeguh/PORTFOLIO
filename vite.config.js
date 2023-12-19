@@ -9,7 +9,7 @@ export default defineConfig({
       VitePWA({
         injectRegister: "auto",
         workbox: {
-          globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+          globPatterns: ["**/*.{js,jsx,css,html,ico,png,svg}"],
           clientsClaim: true,
           skipWaiting: true,
           ExpirationPlugin: true,
@@ -20,21 +20,21 @@ export default defineConfig({
         },
       }),
     ],
-    outDir: "build",
-    chunkSizeWarningLimit: 10000,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            return id
-              .toString()
-              .split("node_modules/")[1]
-              .split("/")[0]
-              .toString();
-          }
-        },
-      },
-    },
+    // outDir: "dist",
+    // chunkSizeWarningLimit: 10000,
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks(id) {
+    //       if (id.includes("node_modules")) {
+    //         return id
+    //           .toString()
+    //           .split("node_modules/")[1]
+    //           .split("/")[0]
+    //           .toString();
+    //       }
+    //     },
+    //   },
+    // },
   },
   plugins: [react(),
   ViteImageOptimizer({

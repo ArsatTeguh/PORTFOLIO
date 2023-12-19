@@ -7,8 +7,8 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className={`footer w-[90%]  mx-auto laptop:w-full bg-[#0d1117]`}>
-      <div className="container footer-content">
+    <div className={`footer   mx-auto laptop:w-full bg-[#0d1117]`}>
+      <div className="container w-[90%] footer-content">
         <Row md={2} xs={1} className="g-4">
           <Col>
             <div className={`info-footer flex flex-col gap-3`}>

@@ -2,15 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* body {
-  margin: 0;
-  font-family: "SF Pro Display", SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
-  color: #f5f5f7;
-} */
+
 * {
   scroll-behavior: smooth;
 }
@@ -21,10 +13,6 @@
   background: linear-gradient(90deg, #b673f8 2.34%, #54dcd9 100.78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace; */
 }
 
 body::-webkit-scrollbar-track {
@@ -95,5 +83,33 @@ body::-webkit-scrollbar-thumb {
     top: 55%;
     height: 1px !important;
     width: 90%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 0.8rem !important;
+}
+
+@media (min-width: 500px) {
+  .grids {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0rem !important;
+    row-gap: 0.8rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .grids {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 0rem !important;
+    row-gap: 0.8rem !important;
   }
 }

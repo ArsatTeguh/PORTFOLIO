@@ -5,12 +5,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css';
 import { useMediaQuery } from './Components/lib/useReponsive';
 
-const Laptop = React.lazy(() => import('./Components/3d_models'));
-const Home = React.lazy(() => import('./Components/Home/Home'));
-const Person = React.lazy(() => import('./Components/person'));
-const Footer = React.lazy(() => import('./Components/footer/footer'));
-const Skils = React.lazy(() => import('./Components/piramida/skils'));
+// const Laptop = React.lazy(() => import('./Components/3d_models'));
+// const Home = React.lazy(() => import('./Components/Home/Home'));
+// const Person = React.lazy(() => import('./Components/person'));
+// const Footer = React.lazy(() => import('./Components/footer/footer'));
+// const Skils = React.lazy(() => import('./Components/piramida/skils'));
 import ProjectNew from './Components/projectNew/project';
+import Home from './Components/Home/Home';
+import Person from './Components/person';
+import Skils from './Components/piramida/skils';
+import Laptop from './Components/3d_models';
+import Footer from './Components/footer/footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
