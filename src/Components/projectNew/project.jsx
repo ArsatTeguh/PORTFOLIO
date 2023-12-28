@@ -4,6 +4,7 @@ import { listProject } from './data';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import './project.css';
 import BlurHash from './blurHash';
+import { motion } from 'framer-motion';
 
 function ProjectNew() {
   const [selectId, setselectId] = useState(null);
@@ -16,7 +17,7 @@ function ProjectNew() {
       <div className="  w-full mx-auto container grids">
         {listProject.map((item, index) => (
           <AnimateScroll key={index} delay={index / 10}>
-            <div
+            <motion.div
               className="lg:w-[400px]   lg:h-[300px] mx-auto relative "
               key={index}
             >
@@ -50,7 +51,7 @@ function ProjectNew() {
                   {selectId !== index && <MdKeyboardArrowDown />}
                 </span>
               </span>
-            </div>
+            </motion.div>
           </AnimateScroll>
         ))}
       </div>

@@ -58,7 +58,6 @@ export const Setup = ({ matches, reffModels }) => {
         duration: 0.8,
         ease: 'power4.inOut',
         delay: 1,
-
         onComplete: () => {
           document.body.style.overflowY = 'auto'; // Mengatur overflowY ke "auto" saat animasi selesai
         },

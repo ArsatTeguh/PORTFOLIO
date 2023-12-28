@@ -4,17 +4,17 @@ import { Blurhash } from 'react-blurhash';
 function BlurHash({ src, alt, hash }) {
   const [imageLoad, setImageLoad] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      setImageLoad(true);
-    };
-    img.src = src;
-  }, [src, hash, alt]);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.onload = () => {
+  //     setImageLoad(true);
+  //   };
+  //   img.src = src;
+  // }, [src, hash, alt]);
 
   return (
     <>
-      <div style={{ display: imageLoad ? 'none' : 'inline' }}>
+      {/* <div style={{ display: imageLoad ? 'none' : 'inline' }}>
         <Blurhash
           hash={hash}
           resolutionY={32}
@@ -23,7 +23,7 @@ function BlurHash({ src, alt, hash }) {
           resolutionX={32}
           punch={1}
         />
-      </div>
+      </div> */}
 
       <img
         src={src}
@@ -31,7 +31,7 @@ function BlurHash({ src, alt, hash }) {
         style={{
           width: '100%',
           height: '100%',
-          display: !imageLoad ? 'none' : 'inline',
+          // display: !imageLoad ? 'none' : 'inline',
         }}
         className={` rounded-lg`}
       />

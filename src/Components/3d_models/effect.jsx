@@ -14,55 +14,52 @@ export const effect = (position, target, onUpdate) => {
       immediateRender: false,
     },
     onUpdate,
-  })
-    .to(target, {
-      x: -1.1236240323,
-      y: -1.0624153378,
-      z: 1.2738242994,
-      scrollTrigger: {
-        trigger: '.triger',
-        start: 'top bottom',
-        end: 'bottom bottom',
-        scrub: 1,
-        immediateRender: false,
-      },
-    })
-    .to(position, {
-      x: 4.07,
-      y: 4.66,
-      z: 9.79,
-      scrollTrigger: {
-        trigger: '.project',
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-        immediateRender: false,
-      },
-      onUpdate,
-    })
-    .to(target, {
-      x: -1.56,
-      y: -0.97,
-      z: 1.69,
-      scrollTrigger: {
-        trigger: '.project',
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-        immediateRender: false,
-      },
-    })
-    .to('.models', {
-      opacity: '0',
-      scrollTrigger: {
-        trigger: '.end-scroll',
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 2,
-        immediateRender: false,
-      },
-    });
-  // .to('.models', {
+  }).to(target, {
+    x: -1.1236240323,
+    y: -1.0624153378,
+    z: 1.2738242994,
+    scrollTrigger: {
+      trigger: '.triger',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: 1,
+      immediateRender: false,
+    },
+  });
+  tl.to(position, {
+    x: 4.07,
+    y: 4.66,
+    z: 9.79,
+    scrollTrigger: {
+      trigger: '.project',
+      start: 'top bottom',
+      end: 'top top',
+      scrub: 1,
+      immediateRender: false,
+    },
+    onUpdate,
+  }).to(target, {
+    x: -1.56,
+    y: -0.97,
+    z: 1.69,
+    scrollTrigger: {
+      trigger: '.project',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: 1,
+      immediateRender: false,
+    },
+  });
+  // tl.to('.models', {
+  //   opacity: '1',
+  //   scrollTrigger: {
+  //     trigger: '.end-scroll',
+  //     start: 'top bottom',
+  //     end: 'top top',
+  //     scrub: 2,
+  //     immediateRender: false,
+  //   },
+  // }).to('.models', {
   //   opacity: 0,
   //   scrollTrigger: {
   //     trigger: '.end-scroll',
@@ -71,7 +68,7 @@ export const effect = (position, target, onUpdate) => {
   //     scrub: 1,
   //     immediateRender: false,
   //   },
-  // })
+  // });
   // .to('.triger', {
   //   opacity: 0,
   //   scrollTrigger: {
