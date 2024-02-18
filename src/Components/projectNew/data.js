@@ -1,7 +1,7 @@
 export const listProject = [
   {
     id:0,
-    link:"https://konflix.vercel.app/",
+    link:"https://konflix-arsatteguh.vercel.app",
     hash:"LTEyVyRj?bRkWVV@kDoL~qt7WqRj",
     url: "/project1.png",
     title: "Redesign Netflix",
@@ -25,7 +25,7 @@ export const listProject = [
   },
   {
     id:3,
-    link:"invoice-generator-git-main-arsatteguh.vercel.app",
+    link:"https://invoice-generator-git-main-arsatteguh.vercel.app",
     hash:"LDQJcdD%~p%M4n4n?b-;4nD%of%M",
     url: "/product_invoice.png",
     title: "Invoce Generator",
