@@ -31,4 +31,12 @@ export const listProject = [
     title: "Invoce Generator",
     desc: "Invoice Generator is a project for entrepreneurs who want speed in creating PDF invoices. Using Next Js, Tailwind css, Next-Theme, Nodemailer, MongoDB. Allows users to save downloaded invoices to a database and send them to email. They can also view all invoice lists, view invoice status, total invoice amount, and can resend invoices to the intended email.",
   },
+  {
+    id:4,
+    link:"https://arsat-test-slicing.vercel.app",
+    hash:"LDQJcdD%~p%M4n4n?b-;4nD%of%M",
+    url: "/slicing1.png",
+    title: "Slicing on based Figma",
+    desc: "Slicing based on Figma, using next js 14, Tailwind css, Typescript produces a professional and responsive appearance.",
+  },
 ];

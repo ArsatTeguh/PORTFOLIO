@@ -33,7 +33,7 @@ function BlurHash({ src, alt, hash }) {
           height: '100%',
           // display: !imageLoad ? 'none' : 'inline',
         }}
-        className={` rounded-lg`}
+        className={`  object-cover`}
       />
     </>
   );

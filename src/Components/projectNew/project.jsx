@@ -18,7 +18,7 @@ function ProjectNew() {
         {listProject.map((item, index) => (
           <AnimateScroll key={index} delay={index / 10}>
             <motion.div
-              className="lg:w-[400px]   lg:h-[300px] mx-auto relative "
+              className="lg:w-[400px] border-[2px] rounded  lg:h-[300px] mx-auto relative "
               key={index}
             >
               <BlurHash src={item.url} alt={item.title} hash={item.hash} />
@@ -46,9 +46,13 @@ function ProjectNew() {
 
                 <span
                   onClick={() => setselectId(item.id)}
-                  className={` text-black flex items-center w-full justify-center  text-3xl cursor-pointer `}
+                  className={`  flex items-center w-full justify-center  text-3xl cursor-pointer `}
                 >
-                  {selectId !== index && <MdKeyboardArrowDown />}
+                  {selectId !== index && (
+                    <p className="bg-zinc-800 text-white rounded-md">
+                      <MdKeyboardArrowDown />
+                    </p>
+                  )}
                 </span>
               </span>
             </motion.div>
