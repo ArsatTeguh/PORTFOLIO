@@ -39,4 +39,12 @@ export const listProject = [
     title: "Slicing on based Figma",
     desc: "Slicing based on Figma, using next js 14, Tailwind css, Typescript produces a professional and responsive appearance.",
   },
+  {
+    id:5,
+    link:"https://learn-management-system-one.vercel.app",
+    hash:"LDQJcdD%~p%M4n4n?b-;4nD%of%M",
+    url: "/lms.png",
+    title: "Learn Management System",
+    desc: "The Learn Management System was created using Fullstack Next Js, Typescript, node Js, mongoDB, Pusher-Js and others. The Payment Gateway features Comment Like and Dislike chapters in real time, and Multi Role.",
+  },
 ];
