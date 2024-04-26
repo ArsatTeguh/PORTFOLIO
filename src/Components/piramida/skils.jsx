@@ -23,6 +23,7 @@ const list = [
   { icon: <FaDocker />, class: 'react ', title: 'Docker' },
   { icon: <SiIcons.SiMongodb />, class: 'node ', title: 'Postgres' },
   { icon: <BiLogoPostgresql />, class: 'next ', title: 'Postgres' },
+  
 ];
 
 import { AnimateScroll } from '../lib/animationScroll';
