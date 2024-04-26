@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import { AiFillGitlab, AiFillGithub } from 'react-icons/ai';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { AiFillGitlab } from 'react-icons/ai';
 import * as DiIcons from 'react-icons/di';
 import * as SiIcons from 'react-icons/si';
-import * as BiIcons from 'react-icons/bi';
-import { motion } from 'framer-motion';
+import { FaDocker } from "react-icons/fa6";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const list = [
   {
@@ -20,10 +20,13 @@ const list = [
   { icon: <SiIcons.SiNestjs />, class: 'nest  ', title: 'Nest Js' },
   { icon: <DiIcons.DiNodejsSmall />, class: 'node  ', title: 'Node Js' },
   { icon: <SiIcons.SiThreedotjs />, class: 'next ', title: 'Three Js' },
+  { icon: <FaDocker />, class: 'react ', title: 'Docker' },
+  { icon: <SiIcons.SiMongodb />, class: 'node ', title: 'Postgres' },
+  { icon: <BiLogoPostgresql />, class: 'next ', title: 'Postgres' },
 ];
 
-import '../skils/skil.css';
 import { AnimateScroll } from '../lib/animationScroll';
+import '../skils/skil.css';
 
 const Skils = () => {
   return (

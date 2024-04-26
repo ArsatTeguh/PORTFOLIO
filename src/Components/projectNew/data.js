@@ -17,11 +17,11 @@ export const listProject = [
   },
   {
     id:2,
-    link:"https://github.com/ArsatTeguh/node-service.git",
+    link:"https://47.237.28.68",
     hash:"LaMaL#og_2jXM|ogxtM{~poJIURk",
     url: "/project3.png",
-    title: "Modern Dashboard",
-    desc: "Modern Dashboard is a Fullstack mastery project that uses React Js, Nest Js, TypeScript, Talwind Css and Postgress.",
+    title: "Rest Full API - NEST JS",
+    desc: "a Restful API Building using Nest Js, Typescript, MongoDB, Postgresql, and Prisma technology and has been deployed on ALIBABA CLOUD",
   },
   {
     id:3,
